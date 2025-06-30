@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-pVZ5uW4A9Lz9iW3OwhFgD1ZgL+kOQzB14xnhn6jx6D0alU4E0d+OGt3Fg8dVEOrAXG6qld8wK9mGh8G1nNV2lA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    
 </head>
 
 <body>
@@ -47,6 +47,19 @@
             document.getElementById('imageOverlay').style.display = "block";
             
         }
+
+        document.addEventListener('DOMContentLoaded', function () {
+        const deleteButtons = document.querySelectorAll('.delete-btn');
+        const deleteForm = document.getElementById('deleteForm');
+
+        deleteButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                const id = this.getAttribute('data-id');
+                const actionUrl = `/delete/${id}`; // langsung sesuai route URI
+                deleteForm.setAttribute('action', actionUrl);
+            });
+        });
+    });
     </script>
 </body>
 

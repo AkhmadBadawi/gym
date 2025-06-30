@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Members;
+use App\Models\Member;
+use finfo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class MembersController extends Controller
 {
@@ -12,7 +14,7 @@ class MembersController extends Controller
      */
     public function index()
     {
-        $members = Members::all();
+        $members = Member::all();
         return view('member.index', data: compact('members'));
     }
 
@@ -42,7 +44,7 @@ class MembersController extends Controller
             return redirect()->back()->withErrors($e->validator)->withInput();
         }
 
-        $member = new Members();
+        $member = new Member();
         $member->name = $request->name;
         $member->address = $request->address;
         $member->phone = $request->phone;
@@ -64,7 +66,7 @@ class MembersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Members $member)
+    public function show(Member $member)
     {
         return view('member.show', compact('member'));
     }
@@ -72,24 +74,66 @@ class MembersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Members $member)
+    public function edit($id)
     {
+        $member = Member::findOrFail($id);
         return view('member.edit', compact('member'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Members $member)
+    public function update(Request $request, $id)
     {
-        //
+        try {
+            $request->validate([
+                'name' => 'required|string|max:255',
+                'address' => 'required|string|max:255',
+                'phone' => 'required|string|max:15',
+                'status' => 'required',
+                'payment_receipt' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+                'photo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            ]);
+        } catch (\Illuminate\Validation\ValidationException $e) {
+            return redirect()->back()->withErrors($e->validator)->withInput();
+        }
+
+        $member = Member::findOrFail($id);
+        $member->name = $request->name;
+        $member->address = $request->address;
+        $member->phone = $request->phone;
+        $member->status = $request->status;
+
+        if ($request->hasFile('payment_receipt')) {
+            $member->payment_receipt = $request->file('payment_receipt')->store('receipts', 'public');
+        }
+
+        if ($request->hasFile('photo')) {
+            $member->photo = $request->file('photo')->store('photos', 'public');
+        }
+
+        $member->save();
+
+        return redirect()->route('member.index')->with('success', 'Member updated successfully.');
+        
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Members $member)
+    public function destroy($id)
     {
-        //
+        $member = Member::findOrFail($id);
+
+        if ($member->payment_receipt) {
+            Storage::disk('public')->delete($member->payment_receipt);
+        }
+        if ($member->photo) {
+            Storage::disk('public')->delete($member->photo);
+        }
+
+        $member->delete();
+
+        return redirect()->route('member.index')->with('success', 'Member deleted successfully.');
     }
 }

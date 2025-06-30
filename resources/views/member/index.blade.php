@@ -35,8 +35,8 @@
                     </td>
                     <td>
                         @if ($item->payment_receipt)
-                            <img src="{{ asset('storage/' . $item->payment_receipt) }}" alt="Photo" class="img-thumbnail"
-                                style="width: 100px; height: auto;"
+                            <img src="{{ asset('storage/' . $item->payment_receipt) }}" alt="Photo"
+                                class="img-thumbnail" style="width: 100px; height: auto;"
                                 onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
                         @else
                             No Receipt
@@ -44,8 +44,13 @@
                     </td>
 
                     <td>
-                        <a href="{{ route('authors.edit', $item->id) }}" class="btn btn-primary">Edit</a>
-                        <form action="{{ route('authors.destroy', $item->id) }}" method="POST" style="display:inline;">
+                        <a href="{{ route('member.edit', $item->id) }}" class="btn btn-primary">Edit</a>
+                        <button title="Delete" class="btn btn-danger delete-btn" data-id="{{ $item->id }}"
+                            data-bs-toggle="modal" data-bs-target="#handleDelete">
+                            Hapus
+                        </button>
+
+                        <form action="{{ route('member.destroy', $item->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>
@@ -63,4 +68,27 @@
         <img id="overlayImage" src="" class="overlay-image">
     </div>
     {{-- END OF IMAGE OVERLAY --}}
+
+    <!-- DELETE MODAL -->
+    <div class="modal fade" id="handleDelete">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Delete</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure you want to delete this item?</p>
+                    <form id="deleteForm" method="POST">
+                        @csrf
+                        @method('DELETE')
+                        <button type="submit" class="btn btn-primary">Delete</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF DELETE MODAL -->
+
 </div>
