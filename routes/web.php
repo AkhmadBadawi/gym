@@ -14,3 +14,4 @@ Route::delete('/delete/{id}', [MembersController::class, 'destroy'])->name('memb
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'login'])->name('login.attempt');
 
+Route::get('/home', [LoginController::class, 'landingPage'])->name('home');
