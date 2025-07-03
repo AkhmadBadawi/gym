@@ -15,7 +15,13 @@ class MembersController extends Controller
     public function index()
     {
         $members = Member::all();
-        return view('member.index', data: compact('members'));
+        return view('layouts.index', data: compact('members'));
+    }
+
+    public function dashboard()
+    {
+        $members = Member::all();
+        return view('layouts.index', data: compact('members'));
     }
 
     /**

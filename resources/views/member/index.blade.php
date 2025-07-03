@@ -1,60 +1,86 @@
-@include('navbar')
-<div class="container p-3">
-    <h2>Members</h2>
-    <a href="{{ route('member.create') }}" class="btn btn-primary">Add Member</a>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-                <th scope="col">No.</th>
-                <th scope="col">Name</th>
-                <th scope="col">Address</th>
-                <th scope="col">Phone</th>
-                <th scope="col">Status</th>
-                <th scope="col">Photo</th>
-                <th scope="col">Payment Receipt</th>
-                <th scope="col">Actions</th>
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($members as $item)
-                <tr>
-                    <th scope="row">{{ $loop->iteration }}</th>
-                    <td>{{ $item->name }}</td>
-                    <td>{{ $item->address }}</td>
-                    <td>{{ $item->phone }}</td>
-                    <td><i class="fas fa-link"></i>{{ $item->status }}</td>
-                    <td>
-                        @if ($item->photo)
-                            <img src="{{ asset('storage/' . $item->photo) }}" alt="Photo" class="img-thumbnail"
-                                style="width: 100px; height: auto;"
-                                onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
-                        @else
-                            No Photo
-                        @endif
-                    </td>
-                    <td>
-                        @if ($item->payment_receipt)
-                            <img src="{{ asset('storage/' . $item->payment_receipt) }}" alt="Photo"
-                                class="img-thumbnail" style="width: 100px; height: auto;"
-                                onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
-                        @else
-                            No Receipt
-                        @endif
-                    </td>
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Members</h1>
+    </div>
 
-                    <td>
-                        <a href="{{ route('member.edit', $item->id) }}" class="btn btn-primary">Edit</a>
-                        <button title="Delete" class="btn btn-danger delete-btn" data-id="{{ $item->id }}"
-                            data-bs-toggle="modal" data-bs-target="#handleDelete">
-                            Hapus
-                        </button>
+    <div class="add mb-4">
+        <a href="{{ route('member.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Member</a>
+    </div>
 
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">History Members</h6>
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Address</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Photo</th>
+                            <th scope="col">Payment Receipt</th>
+                            <th scope="col">Actions</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($members as $item)
+                            <tr>
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>{{ $item->name }}</td>
+                                <td>{{ $item->address }}</td>
+                                <td>{{ $item->phone }}</td>
+                                <td>
+                                    @if ($item->status == '1')
+                                        <span class="m-0 font-weight-bold text-success">Active</span>
+                                    @else
+                                        <span class="m-0 font-weight-bold text-danger">Inactive</span>
+                                    @endif
+                                </td>
+                                <td>
+                                    @if ($item->photo)
+                                        <img src="{{ asset('storage/' . $item->photo) }}" alt="Photo"
+                                            class="img-thumbnail" style="width: 100px; height: auto;"
+                                            onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
+                                    @else
+                                        No Photo
+                                    @endif
+                                </td>
+                                <td>
+                                    @if ($item->payment_receipt)
+                                        <img src="{{ asset('storage/' . $item->payment_receipt) }}" alt="Photo"
+                                            class="img-thumbnail" style="width: 100px; height: auto;"
+                                            onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
+                                    @else
+                                        No Receipt
+                                    @endif
+                                </td>
+
+                                <td>
+                                    <a href="{{ route('member.edit', $item->id) }}" class="btn btn-primary">Edit</a>
+                                    <button title="Delete" class="btn btn-danger delete-btn"
+                                        data-id="{{ $item->id }}" data-bs-toggle="modal"
+                                        data-bs-target="#handleDelete">
+                                        Hapus
+                                    </button>
+
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 
     {{-- IMAGE OVERLAY --}}
     <div id="imageOverlay" class="image-overlay" style="display: none;" onclick="closeImageOverlay()">&times;">
@@ -87,3 +113,4 @@
     <!-- END OF DELETE MODAL -->
 
 </div>
+<!-- /.container-fluid -->

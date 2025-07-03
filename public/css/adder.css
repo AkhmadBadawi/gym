@@ -32,6 +32,7 @@
     z-index: 10000;
 }
 
-body {
-    background-color: lightyellow;
+.navbar-nav {
+    background-color: #4f4202;
+    color: #fff;
 }

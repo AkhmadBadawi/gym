@@ -56,6 +56,6 @@ class LoginController extends Controller
     public function landingPage()
     {
 
-        return view('index'); // Tampilkan halaman landing page jika belum login
+        return view('layouts.index'); // Tampilkan halaman landing page jika belum login
     }
 }
