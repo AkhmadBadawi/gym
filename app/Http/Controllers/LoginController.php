@@ -15,40 +15,56 @@ class LoginController extends Controller
         return view('login.login');
     }
 
+
     public function login(Request $request)
     {
-        // Validasi input
-        $request->validate([
-            'username' => ['required'],
-            'password' => ['required'],
-        ]);
+        $credentials = $request->only('username', 'password');
 
-        // dd($request->all()); // Debugging: tampilkan semua input yang diterima
-
-        // Ambil user dari database berdasarkan username
-        $user = User::where('username', $request->username)->first();
-
-        // Cek apakah user ditemukan dan password cocok
-        if ($user && Hash::check($request->password, $user->password)) {
-            // Simpan data user ke session
-            session([
-                'user_id' => $user->id,
-                'username' => $user->username,
-                'access' => $user->access,
-            ]);
-
-            return redirect('/'); // arahkan ke halaman dashboard
+        if (Auth::attempt($credentials)) {
+            // Login berhasil, otomatis simpan session
+            return redirect()->intended('/dashboard');
         }
 
-        // Jika gagal
-        return back()->withErrors(['username' => 'Username atau password salah'])->withInput();
+        // Gagal
+        return back()->withErrors([
+            'username' => 'Username and Password are incorrect',
+        ])->withInput();
     }
-    
+
+    // public function login1(Request $request)
+    // {
+    //     // Validasi input
+    //     $request->validate([
+    //         'username' => ['required'],
+    //         'password' => ['required'],
+    //     ]);
+
+    //     // dd($request->all()); // Debugging: tampilkan semua input yang diterima
+
+    //     // Ambil user dari database berdasarkan username
+    //     $user = User::where('username', $request->username)->first();
+
+    //     // Cek apakah user ditemukan dan password cocok
+    //     if ($user && Hash::check($request->password, $user->password)) {
+    //         // Simpan data user ke session
+    //         session([
+    //             'user_id' => $user->id,
+    //             'username' => $user->username,
+    //             'access' => $user->access,
+    //         ]);
+
+    //         return redirect('/dashboard');
+    //     }
+
+    //     // Jika gagal
+    //     return back()->withErrors(['username' => 'Username and Password are incorrect'])->withInput();
+    // }
+
     public function logout()
     {
         // Hapus data user dari session
         session()->forget(['user_id', 'username', 'access']);
-        
+
         // Redirect ke halaman login
         return redirect('/login');
     }

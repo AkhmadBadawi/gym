@@ -29,7 +29,7 @@ class MembersController extends Controller
      */
     public function create()
     {
-        return view('member.create');
+        return view('layouts.index');
     }
 
     /**
@@ -83,7 +83,7 @@ class MembersController extends Controller
     public function edit($id)
     {
         $member = Member::findOrFail($id);
-        return view('member.edit', compact('member'));
+        return view('layouts.index', compact('member'));
     }
 
     /**
