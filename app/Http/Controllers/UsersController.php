@@ -64,7 +64,7 @@ class UsersController extends Controller
     public function edit($id)
     {
         $user = User::findOrFail($id);
-        return view('users.edit', compact('user'));
+        return view('layouts.index', compact('user'));
     }
 
     /**
@@ -94,7 +94,7 @@ class UsersController extends Controller
         $user->access = $request->access ?? '0'; // Default access level if not provided
         $user->save();
 
-        return redirect()->route('user.index')->with('success', 'User updated successfully.');
+        return redirect()->route('users.index')->with('success', 'User updated successfully.');
     }
 
     /**

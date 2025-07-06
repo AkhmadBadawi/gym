@@ -20,8 +20,13 @@ class MembersController extends Controller
 
     public function dashboard()
     {
+        
         $members = Member::all();
-        return view('layouts.index', data: compact('members'));
+        $membersCount = $members->count();
+        $activeMembers = $members->where('status', '1')->count();
+        $inactiveMembers = $members->where('status', '0')->count();
+        $newMembers = $members->where('created_at', '>=', now()->subMonth())->count();
+        return view('layouts.index', data: compact('members', 'membersCount', 'activeMembers', 'inactiveMembers', 'newMembers'));
     }
 
     /**
@@ -111,10 +116,16 @@ class MembersController extends Controller
         $member->status = $request->status;
 
         if ($request->hasFile('payment_receipt')) {
+            if ($member->photo && Storage::disk('public')->exists($member->photo)) {
+                Storage::disk('public')->delete($member->photo);
+            }
             $member->payment_receipt = $request->file('payment_receipt')->store('receipts', 'public');
         }
 
         if ($request->hasFile('photo')) {
+            if ($member->photo && Storage::disk('public')->exists($member->photo)) {
+                Storage::disk('public')->delete($member->photo);
+            }
             $member->photo = $request->file('photo')->store('photos', 'public');
         }
 

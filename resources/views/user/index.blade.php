@@ -28,9 +28,10 @@
                                 <th scope="col">Username</th>
                             @endif
                             <th scope="col">Phone</th>
+                            <th scope="col">Access</th>
                             @if (auth()->user()->access == '0')
                                 {{-- <th scope="col">Password</th> --}}
-                                <th scope="col">Access</th>
+                                
                                 <th scope="col">Actions</th>
                             @endif
                         </tr>

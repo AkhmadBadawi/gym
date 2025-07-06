@@ -19,7 +19,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">hdoahd a
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
     <!-- Vendor CSS Files -->
@@ -76,7 +76,7 @@
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
 
-            <a class="btn-getstarted" href="#about">Get Started</a>
+            <a class="btn-getstarted" href="{{ route('login') }}">Login</a>
 
         </div>
     </header>
@@ -688,7 +688,7 @@
                                     </div>
                                     <div class="col-lg-4 d-none d-lg-block">
                                         <div class="featured-img-wrapper">
-                                            <img src="assets/img/person/person-m-7.webp" class="featured-img"
+                                            <img src="{{ asset('img/person/person-m-7.webp') }}" class="featured-img"
                                                 alt="">
                                         </div>
                                     </div>
@@ -713,7 +713,7 @@
                                             ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
                                         </p>
                                         <div class="profile d-flex align-items-center">
-                                            <img src="assets/img/person/person-f-8.webp" class="profile-img"
+                                            <img src="{{ asset('img/person/person-f-8.webp') }}" class="profile-img"
                                                 alt="">
                                             <div class="profile-info">
                                                 <h3>Sara Wilsson</h3>
@@ -723,7 +723,7 @@
                                     </div>
                                     <div class="col-lg-4 d-none d-lg-block">
                                         <div class="featured-img-wrapper">
-                                            <img src="assets/img/person/person-f-8.webp" class="featured-img"
+                                            <img src="{{ asset('img/person/person-f-8.webp') }}" class="featured-img"
                                                 alt="">
                                         </div>
                                     </div>
@@ -750,7 +750,7 @@
                                             adipisci aut optio.
                                         </p>
                                         <div class="profile d-flex align-items-center">
-                                            <img src="assets/img/person/person-m-9.webp" class="profile-img"
+                                            <img src="{{ asset('img/person/person-m-9.webp') }}" class="profile-img"
                                                 alt="">
                                             <div class="profile-info">
                                                 <h3>Matt Brandon</h3>
@@ -760,7 +760,7 @@
                                     </div>
                                     <div class="col-lg-4 d-none d-lg-block">
                                         <div class="featured-img-wrapper">
-                                            <img src="assets/img/person/person-m-9.webp" class="featured-img"
+                                            <img src="{{ asset('img/person/person-m-9.webp') }}" class="featured-img"
                                                 alt="">
                                         </div>
                                     </div>
@@ -785,7 +785,7 @@
                                             exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
                                         </p>
                                         <div class="profile d-flex align-items-center">
-                                            <img src="assets/img/person/person-f-10.webp" class="profile-img"
+                                            <img src="{{ asset('img/person/person-f-10.webp') }}" class="profile-img"
                                                 alt="">
                                             <div class="profile-info">
                                                 <h3>Jena Karlis</h3>
@@ -795,7 +795,7 @@
                                     </div>
                                     <div class="col-lg-4 d-none d-lg-block">
                                         <div class="featured-img-wrapper">
-                                            <img src="assets/img/person/person-f-10.webp" class="featured-img"
+                                            <img src="{{ asset('img/person/person-f-10.webp') }}" class="featured-img"
                                                 alt="">
                                         </div>
                                     </div>
@@ -853,14 +853,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid" alt=""
+                                    <img src="{{ asset('img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="">
                                         loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">UI/UX Design</div>
                                             <h3 class="entry-title">Mobile Banking App</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-1.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-ui"
                                                     data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -878,14 +878,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/portfolio-10.webp') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Development</div>
                                             <h3 class="entry-title">E-Learning Platform</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-10.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-development"
                                                     data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -903,14 +903,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt=""
+                                    <img src="{{ asset('img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt=""
                                         loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Photography</div>
                                             <h3 class="entry-title">Urban Architecture</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-7.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-photography"
                                                     data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -928,14 +928,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt=""
+                                    <img src="{{ asset('img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt=""
                                         loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Marketing</div>
                                             <h3 class="entry-title">Social Media Campaign</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-4.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-4.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-marketing"
                                                     data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -953,14 +953,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt=""
+                                    <img src="{{ asset('img/portfolio/portfolio-2.webp') }}" class="img-fluid" alt=""
                                         loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">UI/UX Design</div>
                                             <h3 class="entry-title">Smart Home Interface</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-2.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-ui"
                                                     data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -978,14 +978,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/portfolio-11.webp') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Development</div>
                                             <h3 class="entry-title">Cloud Management System</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-11.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-11.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-development"
                                                     data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -1003,14 +1003,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid" alt=""
+                                    <img src="{{ asset('img/portfolio/portfolio-8.webp') }}" class="img-fluid" alt=""
                                         loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Photography</div>
                                             <h3 class="entry-title">Nature Collection</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-8.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-8.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-photography"
                                                     data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -1028,14 +1028,14 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt=""
+                                    <img src="{{ asset('img/portfolio/portfolio-5.webp') }}" class="img-fluid" alt=""
                                         loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Marketing</div>
                                             <h3 class="entry-title">Brand Strategy</h3>
                                             <div class="entry-links">
-                                                <a href="assets/img/portfolio/portfolio-5.webp" class="glightbox"
+                                                <a href="{{ asset('img/portfolio/portfolio-5.webp') }}" class="glightbox"
                                                     data-gallery="portfolio-gallery-marketing"
                                                     data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
@@ -1074,7 +1074,7 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="assets/img/person/person-m-7.webp" class="img-fluid" alt=""
+                                <img src="{{ asset('img/person/person-m-7.webp') }}" class="img-fluid" alt=""
                                     loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -1095,7 +1095,7 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="assets/img/person/person-f-8.webp" class="img-fluid" alt=""
+                                <img src="{{ asset('img/person/person-f-8.webp') }}" class="img-fluid" alt=""
                                     loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -1116,7 +1116,7 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="assets/img/person/person-m-6.webp" class="img-fluid" alt=""
+                                <img src="{{ asset('img/person/person-m-6.webp') }}" class="img-fluid" alt=""
                                     loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -1137,7 +1137,7 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="assets/img/person/person-f-4.webp" class="img-fluid" alt=""
+                                <img src="{{ asset('img/person/person-f-4.webp') }}" class="img-fluid" alt=""
                                     loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -1158,7 +1158,7 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="assets/img/person/person-m-12.webp" class="img-fluid" alt=""
+                                <img src="{{ asset('img/person/person-m-12.webp') }}" class="img-fluid" alt=""
                                     loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -1179,7 +1179,7 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt=""
+                                <img src="{{ asset('img/person/person-f-9.webp') }}" class="img-fluid" alt=""
                                     loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">

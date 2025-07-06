@@ -3,17 +3,17 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Members</h1>
+        <h1 class="h3 mb-0 text-gray-800">Activities</h1>
     </div>
 
     <div class="add mb-4">
-        <a href="{{ route('member.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Member</a>
+        <a href="{{ route('activity.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Activity</a>
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">History Members</h6>
+            <h6 class="m-0 font-weight-bold text-primary">History Activities</h6>
         </div>
 
         <div class="card-body">
@@ -22,53 +22,35 @@
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Address</th>
-                            <th scope="col">Phone</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Photo</th>
-                            <th scope="col">Payment Receipt</th>
+                            <th scope="col">Activity Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Activity Photo</th>
                             <th scope="col">Actions</th>
 
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($members as $item)
+                        @foreach ($activities as $item)
                             <tr>
                                 <th scope="row">{{ $loop->iteration }}</th>
                                 <td>{{ $item->name }}</td>
-                                <td>{{ $item->address }}</td>
-                                <td>{{ $item->phone }}</td>
+                                <td>{{ $item->description }}</td>
+                                <td>{{ $item->date }}</td>
                                 <td>
-                                    @if ($item->status == '1')
-                                        <span class="m-0 font-weight-bold text-success">Active</span>
-                                    @else
-                                        <span class="m-0 font-weight-bold text-danger">Inactive</span>
-                                    @endif
-                                </td>
-                                <td>
-                                    @if ($item->photo)
-                                        <img src="{{ asset('storage/' . $item->photo) }}" alt="Photo"
+                                    @if ($item->picture)
+                                        <img src="{{ asset('storage/' . $item->picture) }}" alt="Photo"
                                             class="img-thumbnail" style="width: 100px; height: auto;"
-                                            onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
+                                            onclick="showImage('{{ asset('storage/' . $item->picture) }}')" />
                                     @else
                                         No Photo
                                     @endif
                                 </td>
-                                <td>
-                                    @if ($item->payment_receipt)
-                                        <img src="{{ asset('storage/' . $item->payment_receipt) }}" alt="Photo"
-                                            class="img-thumbnail" style="width: 100px; height: auto;"
-                                            onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
-                                    @else
-                                        No Receipt
-                                    @endif
-                                </td>
 
                                 <td>
-                                    <a href="{{ route('member.edit', $item->id) }}" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
+                                    <a href="{{ route('activity.edit', $item->id) }}" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
                                     <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#handleDelete"
-                                            onclick="document.getElementById('deleteForm').action = '{{ route('member.destroy', $item->id) }}'"><i class="fa-solid fa-trash"></i> Delete</button>
+                                    onclick="document.getElementById('deleteForm').action = '{{ route('activity.destroy', $item->id) }}'"><i class="fa-solid fa-trash"></i> Delete</button>
                                 </td>
                             </tr>
                         @endforeach
