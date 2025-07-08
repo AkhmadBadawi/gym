@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Index - Strategy Bootstrap Template</title>
+    <title>Monster Galaxy Gym</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
     <!-- Favicons -->
 
-    <link href="{{ asset('img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ asset('img/logo.png') }}" rel="icon">
+    <link href="{{ asset('img/logo.png') }}" rel="apple-touch-icon">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -19,7 +19,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
     <!-- Vendor CSS Files -->
@@ -41,36 +46,16 @@
 
             <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
-                <!-- <img src="assets/img/logo.webp" alt=""> -->
-                <h1 class="sitename">Strategy</h1>
+                <img src="{{ asset('img/logo.png') }}" alt="">
+                <h1 class="sitename">Monster Galaxy Gym</h1>
             </a>
 
             <nav id="navmenu" class="navmenu">
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
-                                class="bi bi-chevron-down toggle-dropdown"></i></a>
-                        <ul>
-                            <li><a href="#">Dropdown 1</a></li>
-                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
-                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Dropdown 1</a></li>
-                                    <li><a href="#">Deep Dropdown 2</a></li>
-                                    <li><a href="#">Deep Dropdown 3</a></li>
-                                    <li><a href="#">Deep Dropdown 4</a></li>
-                                    <li><a href="#">Deep Dropdown 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Dropdown 2</a></li>
-                            <li><a href="#">Dropdown 3</a></li>
-                            <li><a href="#">Dropdown 4</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#services">Facility</a></li>
+                    <li><a href="#portfolio">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -89,50 +74,23 @@
                 <div class="row">
                     <div class="col-lg-7 content-col" data-aos="fade-up">
                         <div class="content">
-                            <div class="agency-name">
-                                <h5>OUR AGENCY</h5>
-                            </div>
 
                             <div class="main-heading">
-                                <h1>CREATIVE <br>DESIGN</h1>
+                                <h1><br>YOUR MUSCLE PAIN IS A REFLECTION OF YOUR HEALTH</h1>
                             </div>
 
                             <div class="divider"></div>
 
-                            <div class="description">
-                                <p>Discover innovative strategies for impactful visual communication. We transform ideas
-                                    into compelling realities, ensuring your brand stands out in a crowded marketplace.
-                                    Our dedicated team leverages cutting-edge techniques to deliver exceptional results
-                                    that resonate with your audience.</p>
-                            </div>
-
-                            <div class="cta-button">
-                                <a href="#services" class="btn">
-                                    <span>EXPLORE SERVICES</span>
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-5" data-aos="zoom-out">
                         <div class="visual-content">
                             <div class="fluid-shape">
-                                <img src="{{ asset('img/abstract/abstract-1.webp') }}" alt="Abstract Fluid Shape"
+                                <img src="{{ asset('img/abstract/logo.png') }}" alt="Abstract Fluid Shape"
                                     class="fluid-img">
                             </div>
 
-                            <div class="stats-card">
-                                <div class="stats-number">
-                                    <h2>5K</h2>
-                                </div>
-                                <div class="stats-label">
-                                    <p>Successful Campaigns</p>
-                                </div>
-                                <div class="stats-arrow">
-                                    <a href="#portfolio"><i class="bi bi-arrow-up-right"></i></a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -145,7 +103,7 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>About</h2>
-                <div><span>Learn More</span> <span class="description-title">About Us</span></div>
+                <div><span>History How its Founded</span> <span class="description-title"></span></div>
             </div><!-- End Section Title -->
 
             <div class="container">
@@ -153,10 +111,10 @@
                 <div class="row gx-5 align-items-center">
                     <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
                         <div class="about-image position-relative">
-                            <img src="{{ asset('img/about/about-portrait-1.webp') }}" class="img-fluid rounded-4 shadow-sm"
+                            <img src="{{ asset('img/about/about.jpg') }}" class="img-fluid w-75 rounded-4 shadow-sm"
                                 alt="About Image" loading="lazy">
                             <div class="experience-badge">
-                                <span class="years">20+</span>
+                                <span class="years">18+</span>
                                 <span class="text">Years of Expertise</span>
                             </div>
                         </div>
@@ -164,13 +122,24 @@
 
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
                         <div class="about-content">
-                            <h2>Elevating Business Performance Through Innovation</h2>
-                            <p class="lead">We focus on crafting bespoke strategies that navigate complexity and
-                                deliver tangible results for our clients.</p>
-                            <p>Through a blend of sophisticated analytics and creative problem-solving, we empower
-                                organizations to thrive in rapidly evolving markets.</p>
+                            <h2>Established to provide an affordable solution for exercising beyond just at home.</h2>
+                            <p class="lead">
+                            <p>
+                                Memberikan solusi untuk olahraga murah di luar rumah, Monster Galaxy
+                                Gym telah berdiri sejak tahun 2007. Tempat ini sudah memiliki banyak member dari
+                                berbagai kalangan. Fasilitas ini dikenal dan masih bersaing di masyarakat sebagai salah
+                                satu tempat olahraga termurah di Pasuruan.
+                            </p>
+                            <p>
+                                Monster Galaxy Gym menawarkan fasilitas lengkap, mulai dari perlengkapan safety, alat
+                                freeweight, mesin, alat kardio, hingga tempat untuk sekadar nongkrong sebelum dan
+                                sesudah latihan. Karena tempatnya tidak terlalu besar, setiap harinya kita bisa
+                                merasakan interaksi sosial yang sangat kuat dan akrab di tempat ini.
+                            </p>
+                            </p>
 
-                            <div class="row g-4 mt-3">
+
+                            <!--<div class="row g-4 mt-3">
                                 <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
                                     <div class="feature-item">
                                         <i class="bi bi-check-circle-fill"></i>
@@ -187,14 +156,14 @@
                                             lasting success.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
 
                             <a href="#" class="btn btn-primary mt-4">Explore Our Services</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
+                <!--<div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="row">
                         <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
                             <div class="testimonial-intro">
@@ -244,8 +213,8 @@
                                                 exceptional value. Our operational efficiency has signficantly
                                                 improved."</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="{{ asset('img/person/person-f-1.webp') }}" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="{{ asset('img/person/') }}"
+                                                    class="client-img" alt="Client" loading="lazy">
                                                 <div>
                                                     <h6 class="mb-0">Eleanor Vance</h6>
                                                     <span>Operations Manager</span>
@@ -267,8 +236,8 @@
                                                 strategies guided us toward achieving our objectives with precision and
                                                 speed."</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="{{ asset('img/person/person-m-1.webp') }}" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="{{ asset('img/person/') }}"
+                                                    class="client-img" alt="Client" loading="lazy">
                                                 <div>
                                                     <h6 class="mb-0">David Kim</h6>
                                                     <span>Product Lead</span>
@@ -290,8 +259,8 @@
                                                 project is exceptional. They've become an essential ally in driving our
                                                 expansion."</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="{{ asset('img/person/person-f-2.webp') }}" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="{{ asset('img/person/') }}"
+                                                    class="client-img" alt="Client" loading="lazy">
                                                 <div>
                                                     <h6 class="mb-0">Isabella Diaz</h6>
                                                     <span>Research Analyst</span>
@@ -313,8 +282,8 @@
                                                 attention to detail have profoundly impacted our corporate growth
                                                 trajectory."</p>
                                             <div class="client-info d-flex align-items-center mt-4">
-                                                <img src="{{ asset('img/person/person-f-3.webp') }}" class="client-img"
-                                                    alt="Client" loading="lazy">
+                                                <img src="{{ asset('img/person/') }}"
+                                                    class="client-img" alt="Client" loading="lazy">
                                                 <div>
                                                     <h6 class="mb-0">Olivia Chen</h6>
                                                     <span>Development Strategist</span>
@@ -327,7 +296,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
             </div>
 
@@ -339,12 +308,12 @@
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2>Services</h2>
-                <div><span>Check Our</span> <span class="description-title">Services</span></div>
+                <div><span>Check Our</span> <span class="description-title">Facility</span></div>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <div class="service-header">
+                <!--<div class="service-header">
                     <div class="row align-items-center">
                         <div class="col-lg-8 col-md-12">
                             <div class="service-intro">
@@ -368,7 +337,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -498,323 +467,10 @@
 
         </section><!-- /Services Section -->
 
-        <!-- Steps Section -->
-        <section id="steps" class="steps section">
 
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Steps</h2>
-                <div><span>How we</span> <span class="description-title">Work</span></div>
-            </div><!-- End Section Title -->
 
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <div class="steps-wrapper">
 
-                    <div class="step-item" data-aos="fade-right" data-aos-delay="200">
-                        <div class="step-content">
-                            <div class="step-icon">
-                                <i class="bi bi-lightbulb"></i>
-                            </div>
-                            <div class="step-info">
-                                <span class="step-number">Step 01</span>
-                                <h3>Initial Consultation</h3>
-                                <p>Conducting thorough discovery sessions to understand your business requirements and
-                                    objectives. Our expert team analyzes your needs to create a customized approach.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Step Item -->
-
-                    <div class="step-item" data-aos="fade-left" data-aos-delay="300">
-                        <div class="step-content">
-                            <div class="step-icon">
-                                <i class="bi bi-gear"></i>
-                            </div>
-                            <div class="step-info">
-                                <span class="step-number">Step 02</span>
-                                <h3>Planning &amp; Strategy</h3>
-                                <p>Developing comprehensive strategies and detailed project plans based on the initial
-                                    consultation. We create actionable roadmaps with clear milestones and deliverables.
-                                </p>
-                            </div>
-                        </div>
-                    </div><!-- End Step Item -->
-
-                    <div class="step-item" data-aos="fade-right" data-aos-delay="400">
-                        <div class="step-content">
-                            <div class="step-icon">
-                                <i class="bi bi-bar-chart"></i>
-                            </div>
-                            <div class="step-info">
-                                <span class="step-number">Step 03</span>
-                                <h3>Development Phase</h3>
-                                <p>Executing the planned strategies with precision and agility. Our team implements
-                                    solutions while maintaining constant communication and progress updates.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Step Item -->
-
-                    <div class="step-item" data-aos="fade-left" data-aos-delay="500">
-                        <div class="step-content">
-                            <div class="step-icon">
-                                <i class="bi bi-check2-circle"></i>
-                            </div>
-                            <div class="step-info">
-                                <span class="step-number">Step 04</span>
-                                <h3>Launch &amp; Support</h3>
-                                <p>Ensuring smooth deployment and providing ongoing support for implemented solutions.
-                                    We monitor performance and make necessary adjustments for optimal results.</p>
-                            </div>
-                        </div>
-                    </div><!-- End Step Item -->
-
-                </div>
-
-            </div>
-
-        </section><!-- /Steps Section -->
-
-        <!-- Call To Action Section -->
-        <section id="call-to-action" class="call-to-action section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
-
-                    <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
-                        <span class="badge text-uppercase mb-2">Don't Miss!</span>
-                        <h2>Revolutionize Your Digital Experience Today</h2>
-                        <p class="my-4">Strategia accelerates your business growth through innovative solutions and
-                            cutting-edge technology. Join thousands of satisfied customers who have transformed their
-                            operations.</p>
-
-                        <div class="features d-flex flex-wrap gap-3 mb-4">
-                            <div class="feature-item">
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>Premium Support</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>Cloud Integration</span>
-                            </div>
-                            <div class="feature-item">
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span>Real-time Analytics</span>
-                            </div>
-                        </div>
-
-                        <div class="cta-buttons d-flex flex-wrap gap-3">
-                            <a href="#" class="btn btn-primary">Start Free Trial</a>
-                            <a href="#" class="btn btn-outline">Learn More</a>
-                        </div>
-                    </div>
-
-                    <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
-                        <img src="{{ asset('img/misc/misc-1.webp') }}" alt="Digital Platform" class="img-fluid rounded-4">
-                        <div class="floating-card">
-                            <div class="card-icon">
-                                <i class="bi bi-graph-up-arrow"></i>
-                            </div>
-                            <div class="card-content">
-                                <span class="stats-number">245%</span>
-                                <span class="stats-text">Growth Rate</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="decoration">
-                        <div class="circle-1"></div>
-                        <div class="circle-2"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section><!-- /Call To Action Section -->
-
-        <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section light-background">
-
-            <!-- Section Title -->
-            <div class="container section-title" data-aos="fade-up">
-                <h2>Testimonials</h2>
-                <div><span>Check Our</span> <span class="description-title">Testimonials</span></div>
-            </div><!-- End Section Title -->
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-                <div class="testimonials-slider swiper init-swiper">
-                    <script type="application/json" class="swiper-config">
-            {
-              "slidesPerView": 1,
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "navigation": {
-                "nextEl": ".swiper-button-next",
-                "prevEl": ".swiper-button-prev"
-              }
-            }
-          </script>
-
-                    <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <h2>Sed ut perspiciatis unde omnis</h2>
-                                        <p>
-                                            Proin iaculis purus consequat sem cure digni ssim donec porttitora entum
-                                            suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et.
-                                            Maecen aliquam, risus at semper.
-                                        </p>
-                                        <p>
-                                            Beatae magnam dolore quia ipsum. Voluptatem totam et qui dolore dignissimos.
-                                            Amet quia sapiente laudantium nihil illo et assumenda sit cupiditate. Nam
-                                            perspiciatis perferendis minus consequatur. Enim ut eos quo.
-                                        </p>
-                                        <div class="profile d-flex align-items-center">
-                                            <img src="assets/img/person/person-m-7.webp" class="profile-img"
-                                                alt="">
-                                            <div class="profile-info">
-                                                <h3>Saul Goodman</h3>
-                                                <span>Client</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 d-none d-lg-block">
-                                        <div class="featured-img-wrapper">
-                                            <img src="{{ asset('img/person/person-m-7.webp') }}" class="featured-img"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End Testimonial Item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <h2>Nemo enim ipsam voluptatem</h2>
-                                        <p>
-                                            Export tempor illum tamen malis malis eram quae irure esse labore quem
-                                            cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua
-                                            noster fugiat irure amet legam anim culpa.
-                                        </p>
-                                        <p>
-                                            Dolorem excepturi esse qui amet maxime quibusdam aut repellendus voluptatum.
-                                            Corrupti enim a repellat cumque est laborum fuga consequuntur. Dolorem
-                                            nostrum deleniti quas voluptatem iure dolorum rerum. Repudiandae doloribus
-                                            ut repellat harum vero aut. Modi aut velit aperiam aspernatur odit ut vitae.
-                                        </p>
-                                        <div class="profile d-flex align-items-center">
-                                            <img src="{{ asset('img/person/person-f-8.webp') }}" class="profile-img"
-                                                alt="">
-                                            <div class="profile-info">
-                                                <h3>Sara Wilsson</h3>
-                                                <span>Designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 d-none d-lg-block">
-                                        <div class="featured-img-wrapper">
-                                            <img src="{{ asset('img/person/person-f-8.webp') }}" class="featured-img"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End Testimonial Item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <h2>
-                                            Labore nostrum eos impedit
-                                        </h2>
-                                        <p>
-                                            Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export
-                                            minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt
-                                            elit fore quem dolore labore illum veniam.
-                                        </p>
-                                        <p>
-                                            Itaque ut explicabo vero occaecati est quam rerum sed. Numquam tempora aut
-                                            aut quaerat quia illum. Nobis quia autem odit ipsam numquam. Doloribus sit
-                                            sint corporis eius totam fuga. Hic nostrum suscipit corrupti nam expedita
-                                            adipisci aut optio.
-                                        </p>
-                                        <div class="profile d-flex align-items-center">
-                                            <img src="{{ asset('img/person/person-m-9.webp') }}" class="profile-img"
-                                                alt="">
-                                            <div class="profile-info">
-                                                <h3>Matt Brandon</h3>
-                                                <span>Freelancer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 d-none d-lg-block">
-                                        <div class="featured-img-wrapper">
-                                            <img src="{{ asset('img/person/person-m-9.webp') }}" class="featured-img"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End Testimonial Item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <div class="row">
-                                    <div class="col-lg-8">
-                                        <h2>Impedit dolor facilis nulla</h2>
-                                        <p>
-                                            Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla
-                                            quem veniam duis minim tempor labore quem eram duis noster aute amet eram
-                                            fore quis sint minim.
-                                        </p>
-                                        <p>
-                                            Omnis aspernatur accusantium qui delectus praesentium repellendus. Facilis
-                                            sint odio aspernatur voluptas commodi qui qui qui pariatur. Corrupti
-                                            deleniti itaque quaerat ipsum deleniti culpa tempora tempore. Et consequatur
-                                            exercitationem hic aspernatur nobis est voluptatibus architecto laborum.
-                                        </p>
-                                        <div class="profile d-flex align-items-center">
-                                            <img src="{{ asset('img/person/person-f-10.webp') }}" class="profile-img"
-                                                alt="">
-                                            <div class="profile-info">
-                                                <h3>Jena Karlis</h3>
-                                                <span>Store Owner</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 d-none d-lg-block">
-                                        <div class="featured-img-wrapper">
-                                            <img src="{{ asset('img/person/person-f-10.webp') }}" class="featured-img"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End Testimonial Item -->
-
-                    </div>
-
-                    <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section><!-- /Testimonials Section -->
 
         <!-- Portfolio Section -->
         <section id="portfolio" class="portfolio section">
@@ -853,15 +509,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-1.webp') }}" class="img-fluid" alt="">
-                                        loading="lazy">
+                                    <img src="{{ asset('img/portfolio/portfolio-1.webp') }}" class="img-fluid"
+                                        alt="">
+                                    loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">UI/UX Design</div>
                                             <h3 class="entry-title">Mobile Banking App</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-1.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-ui"
+                                                <a href="{{ asset('img/portfolio/portfolio-1.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-ui"
                                                     data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -885,8 +542,8 @@
                                             <div class="entry-meta">Development</div>
                                             <h3 class="entry-title">E-Learning Platform</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-10.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-development"
+                                                <a href="{{ asset('img/portfolio/portfolio-10.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-development"
                                                     data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -903,15 +560,15 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-7.webp') }}" class="img-fluid" alt=""
-                                        loading="lazy">
+                                    <img src="{{ asset('img/portfolio/portfolio-7.webp') }}" class="img-fluid"
+                                        alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Photography</div>
                                             <h3 class="entry-title">Urban Architecture</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-7.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-photography"
+                                                <a href="{{ asset('img/portfolio/portfolio-7.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-photography"
                                                     data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -928,15 +585,15 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-4.webp') }}" class="img-fluid" alt=""
-                                        loading="lazy">
+                                    <img src="{{ asset('img/portfolio/portfolio-4.webp') }}" class="img-fluid"
+                                        alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Marketing</div>
                                             <h3 class="entry-title">Social Media Campaign</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-4.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-marketing"
+                                                <a href="{{ asset('img/portfolio/portfolio-4.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-marketing"
                                                     data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -953,15 +610,15 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-2.webp') }}" class="img-fluid" alt=""
-                                        loading="lazy">
+                                    <img src="{{ asset('img/portfolio/portfolio-2.webp') }}" class="img-fluid"
+                                        alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">UI/UX Design</div>
                                             <h3 class="entry-title">Smart Home Interface</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-2.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-ui"
+                                                <a href="{{ asset('img/portfolio/portfolio-2.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-ui"
                                                     data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -985,8 +642,8 @@
                                             <div class="entry-meta">Development</div>
                                             <h3 class="entry-title">Cloud Management System</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-11.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-development"
+                                                <a href="{{ asset('img/portfolio/portfolio-11.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-development"
                                                     data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -1003,15 +660,15 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-8.webp') }}" class="img-fluid" alt=""
-                                        loading="lazy">
+                                    <img src="{{ asset('img/portfolio/portfolio-8.webp') }}" class="img-fluid"
+                                        alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Photography</div>
                                             <h3 class="entry-title">Nature Collection</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-8.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-photography"
+                                                <a href="{{ asset('img/portfolio/portfolio-8.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-photography"
                                                     data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -1028,15 +685,15 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-5.webp') }}" class="img-fluid" alt=""
-                                        loading="lazy">
+                                    <img src="{{ asset('img/portfolio/portfolio-5.webp') }}" class="img-fluid"
+                                        alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
                                             <div class="entry-meta">Marketing</div>
                                             <h3 class="entry-title">Brand Strategy</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-5.webp') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-marketing"
+                                                <a href="{{ asset('img/portfolio/portfolio-5.webp') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-marketing"
                                                     data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
@@ -1074,8 +731,8 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-m-7.webp') }}" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="{{ asset('img/person/person-m-7.webp') }}" class="img-fluid"
+                                    alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
                                 <h4>Walter White</h4>
@@ -1095,8 +752,8 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-f-8.webp') }}" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="{{ asset('img/person/person-f-8.webp') }}" class="img-fluid"
+                                    alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
                                 <h4>Sarah Jhonson</h4>
@@ -1116,8 +773,8 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-m-6.webp') }}" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="{{ asset('img/person/person-m-6.webp') }}" class="img-fluid"
+                                    alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
                                 <h4>William Anderson</h4>
@@ -1137,8 +794,8 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-f-4.webp') }}" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="{{ asset('img/person/person-f-4.webp') }}" class="img-fluid"
+                                    alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
                                 <h4>Amanda Jepson</h4>
@@ -1158,8 +815,8 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-m-12.webp') }}" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="{{ asset('img/person/person-m-12.webp') }}" class="img-fluid"
+                                    alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
                                 <h4>Brian Doe</h4>
@@ -1179,8 +836,8 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-f-9.webp') }}" class="img-fluid" alt=""
-                                    loading="lazy">
+                                <img src="{{ asset('img/person/person-f-9.webp') }}" class="img-fluid"
+                                    alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
                                 <h4>Josepha Palas</h4>
@@ -1203,19 +860,18 @@
 
         </section><!-- /Team Section -->
 
-        <!-- Pricing Section -->
-        <section id="pricing" class="pricing section">
+        <!--<section id="pricing" class="pricing section">
 
-            <!-- Section Title -->
+            
             <div class="container section-title" data-aos="fade-up">
                 <h2>Pricing</h2>
                 <div><span>Check Our</span> <span class="description-title">Pricing</span></div>
-            </div><!-- End Section Title -->
+            </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="row gy-4">
-                    <!-- Basic Plan -->
+                    
                     <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                         <div class="pricing-card">
                             <div class="plan-header">
@@ -1247,9 +903,9 @@
                                 <a href="#" class="btn-plan">Choose Plan</a>
                             </div>
                         </div>
-                    </div><!-- End Basic Plan -->
+                    </div>
 
-                    <!-- Professional Plan -->
+                    
                     <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                         <div class="pricing-card popular">
                             <div class="popular-tag">Most Popular</div>
@@ -1280,9 +936,9 @@
                                 <a href="#" class="btn-plan">Choose Plan</a>
                             </div>
                         </div>
-                    </div><!-- End Professional Plan -->
+                    </div>
 
-                    <!-- Enterprise Plan -->
+                    
                     <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
                         <div class="pricing-card">
                             <div class="plan-header">
@@ -1312,12 +968,12 @@
                                 <a href="#" class="btn-plan">Choose Plan</a>
                             </div>
                         </div>
-                    </div><!-- End Enterprise Plan -->
+                    </div>
                 </div>
 
             </div>
 
-        </section><!-- /Pricing Section -->
+        </section>-->
 
         <!-- Faq Section -->
         <section class="faq-9 faq section" id="faq">
@@ -1433,7 +1089,8 @@
                             </div>
                             <div class="info-content">
                                 <h4>Our Address</h4>
-                                <p>1842 Maple Avenue, Portland, Oregon 97204</p>
+                                <p>Jl. Ki Hajar Dewantara No.19, Tembokrejo, Kec. Purworejo, Kota Pasuruan, Jawa Timur
+                                    67118</p>
                             </div>
                         </div>
                     </div>
@@ -1444,9 +1101,10 @@
                                 <i class="bi bi-envelope"></i>
                             </div>
                             <div class="info-content">
-                                <h4>Email Address</h4>
-                                <p>info@example.com</p>
-                                <p>contact@example.com</p>
+                                <h4>Contact</h4>
+                                <p>galaxygymtembok@gmail.com</p>
+                                <p>@monstergalaxygym</p>
+                                <p>+62 822 7468 8881</p>
                             </div>
                         </div>
                     </div>
@@ -1457,9 +1115,9 @@
                                 <i class="bi bi-headset"></i>
                             </div>
                             <div class="info-content">
-                                <h4>Hours of Operation</h4>
-                                <p>Sunday-Fri: 9 AM - 6 PM</p>
-                                <p>Saturday: 9 AM - 4 PM</p>
+                                <h4>Jam Buka</h4>
+                                <p>Monday-Saturday: 5 AM - 10 PM</p>
+                                <p>Sunday: 5 AM - 12 PM</p>
                             </div>
                         </div>
                     </div>
@@ -1470,76 +1128,12 @@
             <!-- Google Maps (Full Width) -->
             <div class="map-section" data-aos="fade-up" data-aos-delay="200">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.137351038618!2d112.90200577081245!3d-7.668379230028541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7cf53bd0529d3%3A0x39446b92e2d60a5c!2sMONSTER%20GALAXY%20GYM!5e0!3m2!1sid!2sid!4v1751907380964!5m2!1sid!2sid"
                     width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <!-- Contact Form Section (Overlapping) -->
-            <div class="container form-container-overlap">
-                <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
-                    <div class="col-lg-10">
-                        <div class="contact-form-wrapper">
-                            <h2 class="text-center mb-4">Get in Touch</h2>
 
-                            <form action="forms/contact.php" method="post" class="php-email-form">
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-with-icon">
-                                                <i class="bi bi-person"></i>
-                                                <input type="text" class="form-control" name="name"
-                                                    placeholder="First Name" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <div class="input-with-icon">
-                                                <i class="bi bi-envelope"></i>
-                                                <input type="email" class="form-control" name="email"
-                                                    placeholder="Email Address" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <div class="input-with-icon">
-                                                <i class="bi bi-text-left"></i>
-                                                <input type="text" class="form-control" name="subject"
-                                                    placeholder="Subject" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <div class="input-with-icon">
-                                                <i class="bi bi-chat-dots message-icon"></i>
-                                                <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required=""></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-12">
-                                        <div class="loading">Loading</div>
-                                        <div class="error-message"></div>
-                                        <div class="sent-message">Your message has been sent. Thank you!</div>
-                                    </div>
-
-                                    <div class="col-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-submit">SEND
-                                            MESSAGE</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
 
         </section><!-- /Contact Section -->
 
@@ -1590,8 +1184,8 @@
                     <p>A108 Adam Street</p>
                     <p>New York, NY 535022</p>
                     <p>United States</p>
-                    <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-                    <p><strong>Email:</strong> <span>info@example.com</span></p>
+                    <p class="mt-4"><strong>Phone:</strong> <span>+62 822 7468 8881</span></p>
+                    <p><strong>Email:</strong> <span>galaxygymtembok@gmail.com</span></p>
                 </div>
 
             </div>
