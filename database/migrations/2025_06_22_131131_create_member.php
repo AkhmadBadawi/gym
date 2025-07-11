@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('status');
             $table->longText('photo')->nullable();
             $table->longText('payment_receipt')->nullable();
+            $table->date('activity_date')->nullable();
             $table->timestamps();
         });
     }

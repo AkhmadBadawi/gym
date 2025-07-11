@@ -14,6 +14,7 @@ class Member extends Model
         'phone',
         'status',
         'payment_receipt',
+        'activity_date',
         'photo',
     ];
 }
