@@ -436,17 +436,17 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/bg-gym.jpg') }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
                                         alt="">
                                     loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">blablabla</div>
-                                            <h3 class="entry-title">blablabla</h3>
+                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/bg-gym.jpg') }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-ui"
-                                                    data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
+                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-ui"
+                                                    data-glightbox="title: {{ $activity[0]->name }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -460,7 +460,7 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/foto1.jpg') }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
