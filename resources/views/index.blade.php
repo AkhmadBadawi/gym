@@ -54,7 +54,7 @@
                 <ul>
                     <li><a href="#hero" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#services">Facility</a></li>
+                    <li><a href="#facilities">Facility</a></li>
                     <li><a href="#portfolio">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -138,32 +138,11 @@
                             </p>
                             </p>
 
-
-                            <!--<div class="row g-4 mt-3">
-                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
-                                    <div class="feature-item">
-                                        <i class="bi bi-check-circle-fill"></i>
-                                        <h5>Dedicated Team Support</h5>
-                                        <p>Our highly skilled professionals are committed to providing personalized
-                                            service and impactful solutions on every engagement.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
-                                    <div class="feature-item">
-                                        <i class="bi bi-lightbulb-fill"></i>
-                                        <h5>Forward-Thinking Approach</h5>
-                                        <p>We embrace innovative methodologies to develop unique strategies that drive
-                                            lasting success.</p>
-                                    </div>
-                                </div>
-                            </div>-->
-
-                            <a href="#" class="btn btn-primary mt-4">Explore Our Services</a>
+                            <a href="#facilities" class="btn btn-primary mt-4">Explore Our Facilities</a>
                         </div>
                     </div>
-                </div>
 
-                <!--<div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
+                    <!--<div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
                     <div class="row">
                         <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
                             <div class="testimonial-intro">
@@ -298,166 +277,132 @@
                     </div>
                 </div>-->
 
-            </div>
+                </div>
 
         </section><!-- /About Section -->
 
         <!-- Services Section -->
-        <section id="services" class="services section">
+        <section id="facilities" class="services section">
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Services</h2>
+                <h2>Facilities</h2>
                 <div><span>Check Our</span> <span class="description-title">Facility</span></div>
             </div><!-- End Section Title -->
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <!--<div class="service-header">
-                    <div class="row align-items-center">
-                        <div class="col-lg-8 col-md-12">
-                            <div class="service-intro">
-                                <h2 class="service-heading">
-                                    <div>Innovative business</div>
-                                    <div><span>performance solutions</span></div>
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-12">
-                            <div class="service-summary">
-                                <p>
-                                    We integrate forward-thinking strategies, creative approaches, and state-of-the-art
-                                    technologies to deliver exceptional customer experiences that drive growth and
-                                    engage target markets.
-                                </p>
-                                <a href="services.html" class="service-btn">
-                                    View All Services
-                                    <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-card position-relative z-1">
                             <div class="service-icon">
-                                <i class="bi bi-palette"></i>
+                                <i class="bi bi-map"></i>
                             </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
+                            <a class="d-flex align-items-center justify-content-center ">
                             </a>
                             <h3>
-                                <a href="service-details.html">
-                                    Creative <span>branding</span>
+                                <a>
+                                    Lokasi<span>Strategis</span>
                                 </a>
                             </h3>
                             <p>
-                                Nulla facilisi. Maecenas eget magna neque. Suspendisse potenti. Curabitur eleifend nisi
-                                non magna vulputate, vel condimentum libero tempus. Proin consectetur feugiat diam.
+                                Posisi Monster Galaxy Gym yang strategis di tengah kota Pasuruan memudahkan
+                                aksesibilitas bagi anggota dan pengunjung.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-card position-relative z-1">
                             <div class="service-icon">
-                                <i class="bi bi-gem"></i>
+                                <i class="bi bi-cup-hot"></i>
                             </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
+                            <a class=" d-flex align-items-center justify-content-center ">
+
                             </a>
                             <h3>
-                                <a href="service-details.html">
-                                    Design <span>systems</span>
+                                <a>
+                                    Tempat<span>Nongkrong</span>
                                 </a>
                             </h3>
                             <p>
-                                Praesent euismod varius tellus, vel bibendum nunc interdum at. Donec vehicula diam vel
-                                metus venenatis convallis. Aliquam erat volutpat. Etiam viverra magna sit amet.
+                                Monster Galaxy Gym menyediakan area santai yang nyaman untuk anggota bersosialisasi
+                                sebelum dan sesudah latihan, menciptakan komunitas yang erat.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-card position-relative z-1">
                             <div class="service-icon">
-                                <i class="bi bi-megaphone"></i>
+                                <i class="bi bi-p-circle"></i>
                             </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
+                            <a href="service-details.html" class=" d-flex align-items-center justify-content-center ">
+
                             </a>
                             <h3>
                                 <a href="service-details.html">
-                                    Marketing <span>strategies</span>
+                                    Tempat <span>Parkir Gratis</span>
                                 </a>
                             </h3>
                             <p>
-                                Vivamus tempor velit id magna dictum, sed fermentum nisi faucibus. Integer nec pretium
-                                sapien. Fusce tincidunt ligula et purus consequat, ac pellentesque nulla eleifend.
+                                Monster Galaxy Gym menyediakan area parkir gratis, memastikan kenyamanan
+                                bagi anggota yang datang dengan kendaraan pribadi.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="service-card position-relative z-1">
                             <div class="service-icon">
-                                <i class="bi bi-code-slash"></i>
+                                <i class="bi bi-inboxes"></i>
                             </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
+                            <a class=" d-flex align-items-center justify-content-center">
                             </a>
                             <h3>
-                                <a href="service-details.html">
-                                    Digital <span>platforms</span>
+                                <a>
+                                    Locker<span>Room</span>
                                 </a>
                             </h3>
                             <p>
-                                Cras fermentum odio eu feugiat malesuada. Vestibulum ante ipsum primis in faucibus orci
-                                luctus et accumsan cursus. Morbi placerat nulla vel nunc viverra accumsan.
+                                Monster Galaxy Gym menyediakan fasilitas locker room yang aman dan nyaman untuk
+                                menyimpan barang-barang pribadi anggota selama berolahraga.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-card position-relative z-1">
                             <div class="service-icon">
-                                <i class="bi bi-graph-up"></i>
+                                <i class="bi bi-prescription2"></i>
                             </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
+                            <a class="d-flex align-items-center justify-content-center ">
+
                             </a>
                             <h3>
-                                <a href="service-details.html">
-                                    Growth <span>acceleration</span>
+                                <a>
+                                    Safety<span>& P3K</span>
                                 </a>
                             </h3>
                             <p>
-                                Aenean vel augue vel nisi bibendum posuere. Phasellus in lacus quis urna sodales
-                                dignissim. Duis aliquam libero eget risus facilisis. Quisque eget libero vel nisl
-                                fringilla.
+                                Monster Galaxy Gym dilengkapi dengan perlengkapan keselamatan dan P3K untuk
+                                memastikan keamanan anggota selama berolahraga, memberikan rasa aman dan nyaman.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="service-card position-relative z-1">
                             <div class="service-icon">
-                                <i class="bi bi-camera-video"></i>
+                                <i class="bi bi-person-standing"></i>
+                                <i class="bi bi-person-standing-dress"></i>
                             </div>
-                            <a href="service-details.html"
-                                class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                                <i class="bi bi-arrow-up-right"></i>
+                            <a class="d-flex align-items-center justify-content-center">
+
                             </a>
                             <h3>
-                                <a href="service-details.html">
-                                    Media <span>solutions</span>
+                                <a>
+                                    Kamar<span>Mandi</span>
                                 </a>
                             </h3>
                             <p>
-                                Etiam efficitur lacus in diam finibus, nec ultrices est sagittis. Maecenas elementum
-                                magna sed risus faucibus, nec commodo purus facilisis. Vestibulum accumsan magna.
+                                Monster Galaxy Gym menyediakan fasilitas kamar mandi yang bersih dan nyaman
+                                untuk anggota, memastikan pengalaman berolahraga yang menyenangkan.
                             </p>
                         </div>
                     </div>
@@ -477,8 +422,8 @@
 
             <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
-                <h2>Portfolio</h2>
-                <div><span>Check Our</span> <span class="description-title">Portfolio</span></div>
+                <h2>Gallery</h2>
+                <div><span>content &</span> <span class="description-title">activity gallery</span></div>
             </div><!-- End Section Title -->
 
             <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
@@ -486,45 +431,25 @@
                 <div class="isotope-layout" data-default-filter="*" data-layout="masonry"
                     data-sort="original-order">
 
-                    <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
-                        <li data-filter="*" class="filter-active">
-                            <i class="bi bi-grid-3x3"></i> All Projects
-                        </li>
-                        <li data-filter=".filter-ui">
-                            <i class="bi bi-phone"></i> UI/UX
-                        </li>
-                        <li data-filter=".filter-development">
-                            <i class="bi bi-code-slash"></i> Development
-                        </li>
-                        <li data-filter=".filter-photography">
-                            <i class="bi bi-camera"></i> Photography
-                        </li>
-                        <li data-filter=".filter-marketing">
-                            <i class="bi bi-graph-up"></i> Marketing
-                        </li>
-                    </ul>
-
                     <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
 
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-1.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/bg-gym.jpg') }}" class="img-fluid"
                                         alt="">
                                     loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">UI/UX Design</div>
-                                            <h3 class="entry-title">Mobile Banking App</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-1.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-ui"
+                                                <a href="{{ asset('img/portfolio/bg-gym.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-ui"
                                                     data-glightbox="title: Mobile Banking App; description: Praesent commodo cursus magna, vel scelerisque nisl consectetur.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -535,21 +460,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-10.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/foto1.jpg') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">Development</div>
-                                            <h3 class="entry-title">E-Learning Platform</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-10.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-development"
+                                                <a href="{{ asset('img/portfolio/foto1.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-development"
                                                     data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -560,21 +483,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-7.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/foto2.jpg') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">Photography</div>
-                                            <h3 class="entry-title">Urban Architecture</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-7.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-photography"
+                                                <a href="{{ asset('img/portfolio/foto2.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-photography"
                                                     data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -585,21 +506,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-4.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/foto3.jpg') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">Marketing</div>
-                                            <h3 class="entry-title">Social Media Campaign</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-4.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-marketing"
+                                                <a href="{{ asset('img/portfolio/foto3.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-marketing"
                                                     data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+                                                >
                                             </div>
                                         </div>
                                     </div>
@@ -610,21 +529,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-2.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/foto4.jpg') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">UI/UX Design</div>
-                                            <h3 class="entry-title">Smart Home Interface</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-2.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-ui"
+                                                <a href="{{ asset('img/portfolio/foto4.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-ui"
                                                     data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -635,21 +552,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-11.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/foto5.jpg') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">Development</div>
-                                            <h3 class="entry-title">Cloud Management System</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-11.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-development"
+                                                <a href="{{ asset('img/portfolio/foto5.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-development"
                                                     data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -660,21 +575,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-8.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/foto6.jpg') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">Photography</div>
-                                            <h3 class="entry-title">Nature Collection</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-8.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-photography"
+                                                <a href="{{ asset('img/portfolio/foto6.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-photography"
                                                     data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -685,21 +598,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('img/portfolio/portfolio-5.webp') }}" class="img-fluid"
+                                    <img src="{{ asset('img/portfolio/foto7.jpg') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">Marketing</div>
-                                            <h3 class="entry-title">Brand Strategy</h3>
+                                            <div class="entry-meta">blablabla</div>
+                                            <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('img/portfolio/portfolio-5.webp') }}"
-                                                    class="glightbox" data-gallery="portfolio-gallery-marketing"
+                                                <a href="{{ asset('img/portfolio/foto7.jpg') }}" class="glightbox"
+                                                    data-gallery="portfolio-gallery-marketing"
                                                     data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                <a href="portfolio-details.html">
-                                                    <i class="bi bi-arrow-right"></i>
-                                                </a>
+
                                             </div>
                                         </div>
                                     </div>
@@ -731,8 +642,8 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-m-7.webp') }}" class="img-fluid"
-                                    alt="" loading="lazy">
+                                <img src="{{ asset('img/person/asd.jpg') }}" class="img-fluid" alt=""
+                                    loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
                                 <h4>Walter White</h4>
@@ -791,68 +702,6 @@
                         </div>
                     </div><!-- End Team Member -->
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                        <div class="team-member d-flex">
-                            <div class="member-img">
-                                <img src="{{ asset('img/person/person-f-4.webp') }}" class="img-fluid"
-                                    alt="" loading="lazy">
-                            </div>
-                            <div class="member-info flex-grow-1">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
-                                <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam
-                                    quasi quam consectetur</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                    <a href=""><i class="bi bi-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End Team Member -->
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
-                        <div class="team-member d-flex">
-                            <div class="member-img">
-                                <img src="{{ asset('img/person/person-m-12.webp') }}" class="img-fluid"
-                                    alt="" loading="lazy">
-                            </div>
-                            <div class="member-info flex-grow-1">
-                                <h4>Brian Doe</h4>
-                                <span>Marketing</span>
-                                <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt
-                                    doloribus quia impedit laborum velit</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                    <a href=""><i class="bi bi-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End Team Member -->
-
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
-                        <div class="team-member d-flex">
-                            <div class="member-img">
-                                <img src="{{ asset('img/person/person-f-9.webp') }}" class="img-fluid"
-                                    alt="" loading="lazy">
-                            </div>
-                            <div class="member-info flex-grow-1">
-                                <h4>Josepha Palas</h4>
-                                <span>Operation</span>
-                                <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis
-                                    fugit eligendi cupiditate vel</p>
-                                <div class="social">
-                                    <a href=""><i class="bi bi-facebook"></i></a>
-                                    <a href=""><i class="bi bi-twitter-x"></i></a>
-                                    <a href=""><i class="bi bi-linkedin"></i></a>
-                                    <a href=""><i class="bi bi-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- End Team Member -->
 
                 </div>
 
@@ -1112,7 +961,7 @@
                     <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
                         <div class="contact-info-box">
                             <div class="icon-box">
-                                <i class="bi bi-headset"></i>
+                                <i class="bi bi-clock"></i>
                             </div>
                             <div class="info-content">
                                 <h4>Jam Buka</h4>
@@ -1141,19 +990,21 @@
 
     <footer id="footer" class="footer">
 
-        <div class="container footer-top">
+        <div class="container center">
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-about">
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <span class="sitename">Strategy</span>
+                    <a>
+                        <!-- Uncomment the line below if you also wish to use an image logo -->
+                        <img src="{{ asset('img/logo.png') }}"class="img-fluid"
+                            style="max-width: 140px; position : relative; right: -10px;" alt="">
+                        <h1 class="sitename">Monster Galaxy Gym</h1>
                     </a>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+
+
                     <div class="social-links d-flex mt-4">
-                        <a href=""><i class="bi bi-twitter-x"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:galaxygymtembok@gmail.com"><i class="bi bi-envelope"></i></a>
+                        <a href="https://www.instagram.com/monstergalaxygym/"><i class="bi bi-instagram"></i></a>
+                        <a href="https://wa.me/6282274688881"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -1162,28 +1013,18 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Terms of service</a></li>
-                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Facility</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">FAQ</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                    </ul>
-                </div>
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>Contact Us</h4>
-                    <p>A108 Adam Street</p>
-                    <p>New York, NY 535022</p>
-                    <p>United States</p>
+                    <p>Jl. Ki Hajar Dewantara</p>
+                    <p>Nomor 19, Pasuruan</p>
+                    <p>Indonesia</p>
                     <p class="mt-4"><strong>Phone:</strong> <span>+62 822 7468 8881</span></p>
                     <p><strong>Email:</strong> <span>galaxygymtembok@gmail.com</span></p>
                 </div>
@@ -1192,14 +1033,14 @@
         </div>
 
         <div class="container copyright text-center mt-4">
-            <p>© <span>Copyright</span> <strong class="px-1 sitename">Strategy</strong> <span>All Rights
+            <p>© <span>Copyright</span> <strong class="px-1">Monster Galaxy Gym</strong> <span>All Rights
                     Reserved</span></p>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->
                 <!-- You can delete the links only if you've purchased the pro version. -->
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Designed by <a href="https://www.instagram.com/gilaangdc/">Gilang Dwi Cahyo</a>
             </div>
         </div>
 
