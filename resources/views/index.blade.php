@@ -56,6 +56,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#facilities">Facility</a></li>
                     <li><a href="#portfolio">Gallery</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -314,19 +315,19 @@
                     <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="service-card position-relative z-1">
                             <div class="service-icon">
-                                <i class="bi bi-cup-hot"></i>
+                                <i class="bi bi-wifi"></i>
                             </div>
                             <a class=" d-flex align-items-center justify-content-center ">
 
                             </a>
                             <h3>
                                 <a>
-                                    Tempat<span>Nongkrong</span>
+                                    Free<span>Wi-Fi</span>
                                 </a>
                             </h3>
                             <p>
-                                Monster Galaxy Gym menyediakan area santai yang nyaman untuk anggota bersosialisasi
-                                sebelum dan sesudah latihan, menciptakan komunitas yang erat.
+                                Monster Galaxy Gym menyediakan akses Wi-Fi gratis di seluruh area gym, memungkinkan
+                                anggota untuk tetap terhubung dan mengakses konten online selama berolahraga.
                             </p>
                         </div>
                     </div>
@@ -464,7 +465,7 @@
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">blablabla</div>
+                                            <div class="entry-meta"></div>
                                             <h3 class="entry-title">blablabla</h3>
                                             <div class="entry-links">
                                                 <a href="{{ asset('img/portfolio/foto1.jpg') }}" class="glightbox"
@@ -627,13 +628,13 @@
         </section><!-- /Portfolio Section -->
 
         <!-- Team Section -->
-        <section id="team" class="team section light-background">
+        <!--<section id="team" class="team section light-background">
 
-            <!-- Section Title -->
+            
             <div class="container section-title" data-aos="fade-up">
                 <h2>Team</h2>
                 <div><span>Check Our</span> <span class="description-title">Team</span></div>
-            </div><!-- End Section Title -->
+            </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -642,7 +643,7 @@
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/asd.jpg') }}" class="img-fluid" alt=""
+                                <img src="{{ asset('img/person/') }}" class="img-fluid" alt=""
                                     loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -658,12 +659,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Team Member -->
+                    </div>
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-f-8.webp') }}" class="img-fluid"
+                                <img src="{{ asset('img/person/') }}" class="img-fluid"
                                     alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -679,12 +680,12 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Team Member -->
+                    </div>
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member d-flex">
                             <div class="member-img">
-                                <img src="{{ asset('img/person/person-m-6.webp') }}" class="img-fluid"
+                                <img src="{{ asset('img/person/') }}" class="img-fluid"
                                     alt="" loading="lazy">
                             </div>
                             <div class="member-info flex-grow-1">
@@ -700,14 +701,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div><!-- End Team Member -->
+                    </div>
 
 
                 </div>
 
             </div>
 
-        </section><!-- /Team Section -->
+        </section>-->
 
         <!--<section id="pricing" class="pricing section">
 
@@ -832,8 +833,8 @@
 
                     <div class="col-lg-5" data-aos="fade-up">
                         <h2 class="faq-title">Have a question? Check out the FAQ</h2>
-                        <p class="faq-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper
-                            libero sit amet adipiscing sem neque sed ipsum.</p>
+                        <p class="faq-description">beberapa pertanyaan mungkin sering ditanyakan perihal seputar
+                            lingkungan kami, silahkan cek daftar pertanyaan yang sering kami temui di sini</p>
                         <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
                             <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211"
                                 fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -848,65 +849,64 @@
                         <div class="faq-container">
 
                             <div class="faq-item faq-active">
-                                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                                <h3>Saya sudah sampai di lokasi tapi tidak menemukan Gym nya, dimana letak lokasi
+                                    Gym-nya?</h3>
                                 <div class="faq-content">
-                                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus
-                                        laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor
-                                        rhoncus dolor purus non.</p>
+                                    <p>Lokasi Gym-nya berada tepat di depan Indomaret Jl Ki Hajar Dewantara, terdapat
+                                        ruko 2 lantai, karena tempatnya di lantai 2, kita harus naik tangga terlebih
+                                        dahulu di sebelah timur </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                                <h3>Apakah menyediakan jasa personal trainer?</h3>
                                 <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                    <p>Untuk saat ini kami belum menyediakan jasa personal trainer, akan tetapi tidak
+                                        perlu khawatir, instruktur kami siap untuk membantu Anda dalam mencapai tujuan
+                                        kebugaran Anda.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                                <h3>Kapan saja jadwal operasional Gym?</h3>
                                 <div class="faq-content">
-                                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci.
-                                        Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl
-                                        suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
-                                        convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                                    </p>
+                                    <p>Setiap hari kami buka mulai pukul 05.00 hingga 22.00 WIB, kecuali hari Minggu
+                                        kami tutup lebih awal yaitu pukul 12.00 WIB.</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                                <h3>saya kebingungan ketika saya baru pertama kali ke gym, apa yang harus saya lakukan?
+                                </h3>
                                 <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id
-                                        interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus
-                                        scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
-                                        Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                                    <p>Jangan khawatir, kami memiliki instruktur yang siap membantu Anda. Anda bisa
+                                        mulai dengan melakukan pemanasan, kemudian mencoba beberapa alat fitness yang
+                                        ada. Jika Anda merasa bingung, jangan ragu untuk bertanya kepada instruktur
+                                        kami. Sama juga halnya dengan saran terkait diet dan pola hidup anda</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                                <h3>bagaimana cara saya mendaftar member disini?</h3>
                                 <div class="faq-content">
-                                    <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse
-                                        in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl
-                                        suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-                                    </p>
+                                    <p>Untuk mendaftar sebagai member, Anda dapat mengunjungi meja pendaftaran yang
+                                        terletak di meja instruktur gym kami. Tim kami akan siap membantu Anda untuk
+                                        menjadi member
+                                        disini. terdapat 2 tipe membership disini yaitu harian dan bulanan. kalau masih
+                                        ragu, kami juga mempersilahkan apabila anda ingin hanya sekedar mampir untuk
+                                        melihat-lihat fasilitas yang ada. </p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
 
                             <div class="faq-item">
-                                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                                <h3>apakah ada nomor yang bisa saya hubungi lebih lanjut?</h3>
                                 <div class="faq-content">
-                                    <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed
-                                        in suscipit sequi. Distinctio ipsam dolore et.</p>
+                                    <p>silahkan cek di bagian bawah halaman ini terdapat nomor whatsapp yang tertera</p>
                                 </div>
                                 <i class="faq-toggle bi bi-chevron-right"></i>
                             </div><!-- End Faq item-->
