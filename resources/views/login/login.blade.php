@@ -8,10 +8,9 @@
         <!-- Left Section -->
         <div class="w-full md:w-1/2 p-10">
             <div class="mb-6">
-                <h1 class="text-2xl font-bold text-gray-800">TheCubeFactory</h1>
+                <h1 class="text-2xl font-bold text-gray-800">MONSTER GALAXY GYM</h1>
             </div>
-            <h2 class="text-3xl font-semibold text-gray-800 mb-1">Welcome back</h2>
-            <p class="text-sm text-gray-500 mb-6">Please enter your details</p>
+            <p class="text-sm text-gray-500 mb-6">Please Login to Continue</p>
 
             <form method="POST" action="{{ route('login.attempt') }}" class="space-y-4">
                 @csrf
@@ -52,12 +51,15 @@
                     class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition">
                     Sign in
                 </button>
+
             </form>
+            <a class="w-full block text-center bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition"
+                href="{{ url('/') }}">Back</a>
         </div>
 
         <!-- Right Section -->
         <div class="w-full md:w-1/2 bg-purple-100 p-8 flex items-center justify-center">
-            <img src="{{ asset('img/undraw_posting_photo.svg') }}" alt="Illustration" class="max-w-full h-auto">
+            <img src="{{ asset('img/logo.png') }}" alt="Illustration" class="max-w-full h-auto">
             {{-- <img src="{{ asset('img/ass.jpg') }}" alt="Illustration" class="max-w-full h-auto"> --}}
         </div>
     </div>
