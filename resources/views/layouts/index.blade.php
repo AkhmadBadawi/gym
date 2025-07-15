@@ -17,8 +17,11 @@
                 <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
+                    <div class="title"><a href="#" class="btn btn-color" id="sidebarToggle"
+                            style="border: 1px solid white;"><i
+                                class="fa-solid fa-bars"></i></a></div>
                     <!-- Topbar Navbar -->
-                    <ul class="navbar-nav bg-white ml-auto">
+                    <ul class="navbar-nav ml-auto">
 
                         <div class="topbar-divider d-none d-sm-block"></div>
 
@@ -27,8 +30,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 @auth
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ auth()->user()->username }}</span>
-
+                                    <span
+                                        class="mr-2 d-none d-lg-inline text-white small">{{ auth()->user()->username }}</span>
                                 @endauth
                                 <img class="img-profile rounded-circle" src="{{ asset('img/undraw_profile.svg') }}">
                             </a>

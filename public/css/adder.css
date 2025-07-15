@@ -32,7 +32,57 @@
     z-index: 10000;
 }
 
+/*sidebar*/
 .navbar-nav {
-    background-color: #4f4202;
+    background-color: #121212;
     color: #fff;
+}
+
+/*navbar*/
+.navbar {
+    background-color: #121212 !important; 
+    color: white;
+}
+
+/*footer*/
+.sticky-footer{
+    background-color: #121212 !important;
+}
+
+/*body*/
+.d-flex #content{
+    background-color: #484646 !important;
+}
+
+/*cover table*/
+.card-body{
+    background-color: #484646 !important;
+}
+
+/*title*/
+.d-sm-flex h1{
+    color: #ffffff !important;
+}
+
+/*table teks*/
+.table thead th,
+.table tbody td,
+.table tbody th {
+    color: white !important;
+}
+
+/*img*/
+.dark-thumb {
+    width: 100px;
+    height: auto;
+    background-color: #484646;
+    padding: 4px; 
+}
+
+.card{
+    background-color: #484646;
+}
+
+.card .h5{
+    color: #ffffff !important;
 }

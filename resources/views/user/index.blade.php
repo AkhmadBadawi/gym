@@ -6,8 +6,15 @@
         <h1 class="h3 mb-0 text-gray-800">Users</h1>
     </div>
 
+    @if (auth()->user()->access == '0')
     <div class="add mb-4">
         <a href="{{ route('user.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add User</a>
+    </div>
+    @endif
+
+    <!-- Search Bar -->
+    <div class="mb-3">
+        <input type="text" id="tableSearch" class="form-control" placeholder="Search users...">
     </div>
 
     <!-- DataTales Example -->

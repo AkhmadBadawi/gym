@@ -2,12 +2,12 @@
 <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#" >
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fa-solid fa-dumbbell"></i>
         </div>
         <div class="sidebar-brand-text mx-3">MonsterGYM</div>
-        
+
     </a>
 
     <!-- Divider -->
@@ -35,8 +35,8 @@
             <span>Member</span></a>
     </li>
 
-     <!-- Nav Item - Users -->
-     <li class="nav-item {{ request()->is('users') ? 'active' : '' }}">
+    <!-- Nav Item - Users -->
+    <li class="nav-item {{ request()->is('users') ? 'active' : '' }}">
         <a class="nav-link" href={{ url('/users') }}>
             <i class="fa-solid fa-users"></i>
             <span>Users</span></a>
@@ -49,10 +49,11 @@
             <span>Activity</span></a>
     </li>
 
-        <!-- Sidebar Toggler (Sidebar) -->
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
+
+    {{-- <!-- Sidebar Toggler (Sidebar) -->
+    <div class="text-center d-none d-md-inline">
+        <button class="rounded-circle border-0" id="sidebarToggle"></button>
+    </div> --}}
 
 
 

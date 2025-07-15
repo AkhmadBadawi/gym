@@ -10,6 +10,11 @@
         <a href="{{ route('activity.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Activity</a>
     </div>
 
+    <!-- Search Bar -->
+    <div class="mb-3">
+        <input type="text" id="tableSearch" class="form-control" placeholder="Search Activity...">
+    </div>
+
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
@@ -40,7 +45,7 @@
                                 <td>
                                     @if ($item->picture)
                                         <img src="{{ asset('storage/' . $item->picture) }}" alt="Photo"
-                                            class="img-thumbnail" style="width: 100px; height: auto;"
+                                            class="img-thumbnail dark-thumb" style="width: 100px; height: auto;"
                                             onclick="showImage('{{ asset('storage/' . $item->picture) }}')" />
                                     @else
                                         No Photo
