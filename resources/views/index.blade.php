@@ -312,7 +312,7 @@
                                             <div class="entry-links">
                                                 <a href="{{ asset('storage/' . $activity[0]->picture) }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-ui"
-                                                    data-glightbox="title: {{ $activity[0]->name }}">
+                                                    data-glightbox="title:{{ $activity[0]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -326,16 +326,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[1]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[1]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[1]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-development"
-                                                    data-glightbox="title: E-Learning Platform; description: Nulla vitae elit libero, a pharetra augue mollis interdum.">
+                                                <a href="{{ asset('storage/' . $activity[1]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-development"
+                                                    data-glightbox="title:{{ $activity[1]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -349,16 +349,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[2]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[2]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[2]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-photography"
-                                                    data-glightbox="title: Urban Architecture; description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem.">
+                                                <a href="{{ asset('storage/' . $activity[2]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-photography"
+                                                    data-glightbox="title:{{ $activity[2]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -372,19 +372,19 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[3]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[3]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[3]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-marketing"
-                                                    data-glightbox="title: Social Media Campaign; description: Quis autem vel eum iure reprehenderit qui in ea voluptate.">
+                                                <a href="{{ asset('storage/' . $activity[3]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-marketing"
+                                                    data-glightbox="title:{{ $activity[3]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-                                                >
+
                                             </div>
                                         </div>
                                     </div>
@@ -395,16 +395,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[4]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[4]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[4]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-ui"
-                                                    data-glightbox="title: Smart Home Interface; description: At vero eos et accusamus et iusto odio dignissimos ducimus.">
+                                                <a href="{{ asset('storage/' . $activity[4]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-ui"
+                                                    data-glightbox="title:{{ $activity[4]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -418,16 +418,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[5]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[5]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[5]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-development"
-                                                    data-glightbox="title: Cloud Management System; description: Temporibus autem quibusdam et aut officiis debitis.">
+                                                <a href="{{ asset('storage/' . $activity[5]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-development"
+                                                    data-glightbox="title:{{ $activity[5]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -441,16 +441,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[6]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[6]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[6]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-photography"
-                                                    data-glightbox="title: Nature Collection; description: Integer posuere erat a ante venenatis dapibus posuere velit aliquet.">
+                                                <a href="{{ asset('storage/' . $activity[6]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-photography"
+                                                    data-glightbox="title:{{ $activity[6]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -464,16 +464,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
+                                    <img src="{{ asset('storage/' . $activity[7]->picture) }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[7]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[7]->description }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}" class="glightbox"
-                                                    data-gallery="portfolio-gallery-marketing"
-                                                    data-glightbox="title: Brand Strategy; description: Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.">
+                                                <a href="{{ asset('storage/' . $activity[7]->picture) }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-marketing"
+                                                    data-glightbox="title:{{ $activity[7]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
