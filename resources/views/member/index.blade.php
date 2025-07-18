@@ -6,9 +6,9 @@
         <h1 class="h3 mb-0 text-gray-800">Members</h1>
     </div>
     @if (auth()->user()->access == '1')
-    <div class="add mb-4">
-        <a href="{{ route('member.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Member</a>
-    </div>
+        <div class="add mb-4">
+            <a href="{{ route('member.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Member</a>
+        </div>
     @endif
 
     <!-- Search Bar -->
@@ -34,7 +34,10 @@
                             <th scope="col">Status</th>
                             <th scope="col">Photo</th>
                             <th scope="col">Payment Receipt</th>
-                            <th scope="col">Actions</th>
+                            @if (auth()->user()->access == '1')
+                                <th scope="col">Actions</th>
+                            @endif
+
 
                         </tr>
                     </thead>
@@ -70,15 +73,17 @@
                                         No Receipt
                                     @endif
                                 </td>
-
-                                <td>
-                                    <a href="{{ route('member.edit', $item->id) }}" class="btn btn-warning btn-sm"><i
-                                            class="fa-solid fa-pen-to-square"></i>Edit</a>
-                                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#handleDelete"
-                                        onclick="document.getElementById('deleteForm').action = '{{ route('member.destroy', $item->id) }}'"><i
-                                            class="fa-solid fa-trash"></i> Delete</button>
-                                </td>
+                                @if (auth()->user()->access == '1')
+                                    <td>
+                                        <a href="{{ route('member.edit', $item->id) }}"
+                                            class="btn btn-warning btn-sm"><i
+                                                class="fa-solid fa-pen-to-square"></i>Edit</a>
+                                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
+                                            data-bs-target="#handleDelete"
+                                            onclick="document.getElementById('deleteForm').action = '{{ route('member.destroy', $item->id) }}'"><i
+                                                class="fa-solid fa-trash"></i> Delete</button>
+                                    </td>
+                                @endif
                             </tr>
                         @endforeach
                     </tbody>
