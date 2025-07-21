@@ -16,7 +16,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                All Members</div>
+                                Semua Member</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $membersCount }}</div>
                         </div>
                         <div class="col-auto">
@@ -34,7 +34,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                Active Member</div>
+                                Member Aktif</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $activeMembers }}</div>
                         </div>
                         <div class="col-auto">
@@ -52,7 +52,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                Inactive Member</div>
+                                Member Tidak Aktif</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $inactiveMembers }}</div>
                         </div>
                         <div class="col-auto">
@@ -70,7 +70,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                New Members</div>
+                                Member Baru</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $newMembers }}</div>
                         </div>
                         <div class="col-auto">
@@ -86,7 +86,7 @@
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">All Members</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Data Semua Member</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -94,9 +94,9 @@
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Address</th>
-                            <th scope="col">Phone</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Alamat</th>
+                            <th scope="col">No. HP</th>
                             <th scope="col">Status</th>
             
                         </tr>
@@ -110,9 +110,9 @@
                                 <td>{{ $item->phone }}</td>
                                 <td>
                                     @if ($item->status == '1')
-                                        <span class="m-0 font-weight-bold text-success">Active</span>
+                                        <span class="badge bg-success text-white">Aktif</span>
                                     @else
-                                        <span class="m-0 font-weight-bold text-danger">Inactive</span>
+                                        <span class="badge bg-danger text-white">Tidak Aktif</span>
                                     @endif
                                 </td>
                             </tr>

@@ -3,22 +3,22 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Activities</h1>
+        <h1 class="h3 mb-0 text-gray-800">Aktivitas</h1>
     </div>
 
     <div class="add mb-4">
-        <a href="{{ route('activity.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Activity</a>
+        <a href="{{ route('activity.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Tambah aktivitas</a>
     </div>
 
     <!-- Search Bar -->
     <div class="mb-3">
-        <input type="text" id="tableSearch" class="form-control" placeholder="Search Activity...">
+        <input type="text" id="tableSearch" class="form-control" placeholder="Search Aktivitas...">
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">History Activities</h6>
+            <h6 class="m-0 font-weight-bold text-primary">History Aktivitas</h6>
         </div>
 
         <div class="card-body">
@@ -27,11 +27,11 @@
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">Activity Name</th>
-                            <th scope="col">Description</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Activity Photo</th>
-                            <th scope="col">Actions</th>
+                            <th scope="col">Nama Aktivitas</th>
+                            <th scope="col">Desktripsi</th>
+                            <th scope="col">Tanggal Aktivitas</th>
+                            <th scope="col">Foto Aktivitas</th>
+                            <th scope="col">Aksi</th>
 
                         </tr>
                     </thead>
@@ -55,7 +55,7 @@
                                 <td>
                                     <a href="{{ route('activity.edit', $item->id) }}" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i>Edit</a>
                                     <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#handleDelete"
-                                    onclick="document.getElementById('deleteForm').action = '{{ route('activity.destroy', $item->id) }}'"><i class="fa-solid fa-trash"></i> Delete</button>
+                                    onclick="document.getElementById('deleteForm').action = '{{ route('activity.destroy', $item->id) }}'"><i class="fa-solid fa-trash"></i> Hapus</button>
                                 </td>
                             </tr>
                         @endforeach
@@ -78,16 +78,16 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Delete</h5>
+                    <h5 class="modal-title">Hapus</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Are you sure you want to delete this item?</p>
+                    <p>Yakin menghapus data ini?</p>
                     <form id="deleteForm" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-primary">Delete</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Hapus</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                     </form>
                 </div>
             </div>

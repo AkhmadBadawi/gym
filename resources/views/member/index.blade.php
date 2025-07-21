@@ -3,23 +3,23 @@
 
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">Members</h1>
+        <h1 class="h3 mb-0 text-gray-800">Kelola Member</h1>
     </div>
     @if (auth()->user()->access == '1')
         <div class="add mb-4">
-            <a href="{{ route('member.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Add Member</a>
+            <a href="{{ route('member.create') }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i> Tambah Member</a>
         </div>
     @endif
 
     <!-- Search Bar -->
     <div class="mb-3">
-        <input type="text" id="tableSearch" class="form-control" placeholder="Search members...">
+        <input type="text" id="tableSearch" class="form-control" placeholder="Cari Member...">
     </div>
 
     <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">History Members</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Data Member</h6>
         </div>
 
         <div class="card-body">
@@ -28,14 +28,14 @@
                     <thead>
                         <tr>
                             <th scope="col">No.</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Address</th>
-                            <th scope="col">Phone</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Alamat</th>
+                            <th scope="col">No. HP</th>
                             <th scope="col">Status</th>
-                            <th scope="col">Photo</th>
-                            <th scope="col">Payment Receipt</th>
+                            <th scope="col">Foto Member</th>
+                            <th scope="col">Bukti Pembayaran</th>
                             @if (auth()->user()->access == '1')
-                                <th scope="col">Actions</th>
+                                <th scope="col">Aksi</th>
                             @endif
 
 
@@ -50,9 +50,9 @@
                                 <td>{{ $item->phone }}</td>
                                 <td>
                                     @if ($item->status == '1')
-                                        <span class="m-0 font-weight-bold text-success">Active</span>
+                                        <span class="badge bg-success text-white">Aktif</span>
                                     @else
-                                        <span class="m-0 font-weight-bold text-danger">Inactive</span>
+                                        <span class="badge bg-danger text-white">Tidak Aktif</span>
                                     @endif
                                 </td>
                                 <td>
@@ -70,7 +70,7 @@
                                             class="img-thumbnail dark-thumb" style="width: 100px; height: auto;"
                                             onclick="showImage('{{ asset('storage/' . $item->photo) }}')" />
                                     @else
-                                        No Receipt
+                                        Tidak Ada Bukti Pembayaran
                                     @endif
                                 </td>
                                 @if (auth()->user()->access == '1')
@@ -81,7 +81,7 @@
                                         <button class="btn btn-danger btn-sm" data-bs-toggle="modal"
                                             data-bs-target="#handleDelete"
                                             onclick="document.getElementById('deleteForm').action = '{{ route('member.destroy', $item->id) }}'"><i
-                                                class="fa-solid fa-trash"></i> Delete</button>
+                                                class="fa-solid fa-trash"></i>Hapus</button>
                                     </td>
                                 @endif
                             </tr>
@@ -105,16 +105,16 @@
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Delete</h5>
+                    <h5 class="modal-title">Hapus</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Are you sure you want to delete this item?</p>
+                    <p>Yakin menghapus data ini?</p>
                     <form id="deleteForm" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-primary">Delete</button>
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Hapus</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                     </form>
                 </div>
             </div>

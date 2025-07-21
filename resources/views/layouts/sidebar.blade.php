@@ -32,21 +32,21 @@
     <li class="nav-item {{ request()->is('members') ? 'active' : '' }}">
         <a class="nav-link" href={{ url('/members') }}>
             <i class="fas fa-fw fa-user"></i>
-            <span>Member</span></a>
+            <span>Kelola Member</span></a>
     </li>
 
     <!-- Nav Item - Users -->
     <li class="nav-item {{ request()->is('users') ? 'active' : '' }}">
         <a class="nav-link" href={{ url('/users') }}>
             <i class="fa-solid fa-users"></i>
-            <span>Users</span></a>
+            <span>Kelola Admin</span></a>
     </li>
 
     <!-- Nav Item - Activity -->
     <li class="nav-item {{ request()->is('activity') ? 'active' : '' }}">
         <a class="nav-link" href={{ url('/activity') }}>
             <i class="fas fa-fw fa-chart-line"></i>
-            <span>Activity</span></a>
+            <span>Galery Aktivitas</span></a>
     </li>
 
 

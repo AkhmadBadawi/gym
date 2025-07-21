@@ -302,20 +302,31 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid"
-                                        alt="">
-                                    loading="lazy">
+                                    {{-- <img src="{{ asset('storage/' . $activity[0]->picture) }}" class="img-fluid" alt=""> --}}
+                                    <img src="{{ isset($activity[0]) && !empty($activity[0]->picture) ? asset('storage/' . $activity[0]->picture) : asset('img/abstract/logo.png') }}"
+                                        class="img-fluid" alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[0]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            {{-- <div class="entry-meta">{{ $activity[0]->name }}</div>
+                                            <h3 class="entry-title">{{ $activity[0]->description }}</h3> --}}
+                                            @if (!empty($activity[0]))
+                                                <div class="entry-meta">{{ $activity[0]->name }}</div>
+                                                <h3 class="entry-title">{{ $activity[0]->description }}</h3>
+                                            @else
+                                                <div class="entry-meta text-muted">Tidak ada aktivitas</div>
+                                                <h3 class="entry-title">Deskripsi belum tersedia</h3>
+                                            @endif
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[0]->picture) }}"
+                                                {{-- <a href="{{ asset('storage/' . $activity[0]->picture) }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-ui"
                                                     data-glightbox="title:{{ $activity[0]->description }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
+                                                </a> --}}
+                                                <a href="{{ !empty($activity[0]->picture) ? asset('storage/' . $activity[0]->picture) : asset('img/abstract/logo.png') }}"
+                                                    class="glightbox" data-gallery="portfolio-gallery-ui"
+                                                    data-glightbox="title:{{ $activity[0]->description ?? 'Tidak ada deskripsi' }}">
+                                                    <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
-
                                             </div>
                                         </div>
                                     </div>
@@ -326,16 +337,18 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[1]->picture) }}" class="img-fluid"
-                                        alt="" loading="lazy">
+                                    {{-- <img src="{{ asset('storage/' . $activity[1]->picture) }}" class="img-fluid"
+                                        alt="" loading="lazy"> --}}
+                                        <img src="{{ isset($activity[1]) && !empty($activity[1]->picture) ? asset('storage/' . $activity[1]->picture) : asset('img/abstract/logo.png') }}"
+                                        class="img-fluid" alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[1]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[1]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[1]->name ?? 'Tanpa Nama' }}</div>
+                                            <h3 class="entry-title">{{ $activity[1]->description ?? 'Tanpa Deskripsi' }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[1]->picture) }}"
+                                                <a href="{{ !empty($activity[1]->picture) ? asset('storage/' . $activity[1]->picture) : asset('img/abstract/logo.png') }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-development"
-                                                    data-glightbox="title:{{ $activity[1]->description }}">
+                                                    data-glightbox="title:{{ $activity[1]->description ?? 'Tidak ada deskripsi' }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -349,16 +362,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[2]->picture) }}" class="img-fluid"
+                                    <img src="{{ isset($activity[2]) && !empty($activity[2]->picture) ? asset('storage/' . $activity[2]->picture) : asset('img/abstract/logo.png') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[2]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[2]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[2]->name ?? 'Tanpa Nama' }}</div>
+                                            <h3 class="entry-title">{{ $activity[2]->description ?? 'Tanpa Deskripsi' }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[2]->picture) }}"
+                                                <a href="{{ !empty($activity[2]->picture) ? asset('storage/' . $activity[2]->picture) : asset('img/abstract/logo.png') }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-photography"
-                                                    data-glightbox="title:{{ $activity[2]->description }}">
+                                                    data-glightbox="title:{{ $activity[2]->description ?? 'Tidak ada deskripsi' }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -372,16 +385,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[3]->picture) }}" class="img-fluid"
+                                    <img src="{{ isset($activity[3]) && !empty($activity[3]->picture) ? asset('storage/' . $activity[3]->picture) : asset('img/abstract/logo.png') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[3]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[3]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[3]->name ?? 'Tanpa Nama' }}</div>
+                                            <h3 class="entry-title">{{ $activity[3]->description ?? 'Tanpa Deskripsi' }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[3]->picture) }}"
+                                                <a href="{{ !empty($activity[3]->picture) ? asset('storage/' . $activity[3]->picture) : asset('img/abstract/logo.png') }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-marketing"
-                                                    data-glightbox="title:{{ $activity[3]->description }}">
+                                                    data-glightbox="title:{{ $activity[3]->description ?? 'Tidak ada deskripsi' }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -395,16 +408,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[4]->picture) }}" class="img-fluid"
+                                    <img src="{{ isset($activity[4]) && !empty($activity[4]->picture) ? asset('storage/' . $activity[4]->picture) : asset('img/abstract/logo.png') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[4]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[4]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[4]->name ?? 'Tanpa Nama' }}</div>
+                                            <h3 class="entry-title">{{ $activity[4]->description ?? 'Tanpa Deskripsi' }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[4]->picture) }}"
+                                                <a href="{{ !empty($activity[4]->picture) ? asset('storage/' . $activity[4]->picture) : asset('img/abstract/logo.png') }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-ui"
-                                                    data-glightbox="title:{{ $activity[4]->description }}">
+                                                    data-glightbox="title:{{ $activity[4]->description ?? 'Tidak ada deskripsi' }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -418,16 +431,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-development">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[5]->picture) }}" class="img-fluid"
+                                    <img src="{{ isset($activity[5]) && !empty($activity[5]->picture) ? asset('storage/' . $activity[5]->picture) : asset('img/abstract/logo.png') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[5]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[5]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[5]->name ?? 'Tanpa Nama' }}</div>
+                                            <h3 class="entry-title">{{ $activity[5]->description ?? 'Tanpa Deskripsi' }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[5]->picture) }}"
+                                                <a href="{{ !empty($activity[5]->picture) ? asset('storage/' . $activity[5]->picture) : asset('img/abstract/logo.png') }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-development"
-                                                    data-glightbox="title:{{ $activity[5]->description }}">
+                                                    data-glightbox="title:{{ $activity[5]->description ?? 'Tidak ada deskripsi' }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -441,16 +454,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-photography">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[6]->picture) }}" class="img-fluid"
+                                    <img src="{{ isset($activity[6]) && !empty($activity[6]->picture) ? asset('storage/' . $activity[6]->picture) : asset('img/abstract/logo.png') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[6]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[6]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[6]->name ?? 'Tanpa Nama' }}</div>
+                                            <h3 class="entry-title">{{ $activity[6]->description ?? 'Tanpa Deskripsi' }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[6]->picture) }}"
+                                                <a href="{{ !empty($activity[6]->picture) ? asset('storage/' . $activity[6]->picture) : asset('img/abstract/logo.png') }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-photography"
-                                                    data-glightbox="title:{{ $activity[6]->description }}">
+                                                    data-glightbox="title:{{ $activity[6]->description ?? 'Tidak ada deskripsi' }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
@@ -464,16 +477,16 @@
                         <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-marketing">
                             <article class="portfolio-entry">
                                 <figure class="entry-image">
-                                    <img src="{{ asset('storage/' . $activity[7]->picture) }}" class="img-fluid"
+                                    <img src="{{ isset($activity[7]) && !empty($activity[7]->picture) ? asset('storage/' . $activity[7]->picture) : asset('img/abstract/logo.png') }}" class="img-fluid"
                                         alt="" loading="lazy">
                                     <div class="entry-overlay">
                                         <div class="overlay-content">
-                                            <div class="entry-meta">{{ $activity[7]->name }}</div>
-                                            <h3 class="entry-title">{{ $activity[7]->description }}</h3>
+                                            <div class="entry-meta">{{ $activity[7]->name ?? 'Tanpa Nama' }}</div>
+                                            <h3 class="entry-title">{{ $activity[7]->description ?? 'Tanpa Deskripsi' }}</h3>
                                             <div class="entry-links">
-                                                <a href="{{ asset('storage/' . $activity[7]->picture) }}"
+                                                <a href="{{ !empty($activity[7]->picture) ? asset('storage/' . $activity[7]->picture) : asset('img/abstract/logo.png') }}"
                                                     class="glightbox" data-gallery="portfolio-gallery-marketing"
-                                                    data-glightbox="title:{{ $activity[7]->description }}">
+                                                    data-glightbox="title:{{ $activity[7]->description ?? 'Tidak ada deskripsi' }}">
                                                     <i class="bi bi-arrows-angle-expand"></i>
                                                 </a>
 
