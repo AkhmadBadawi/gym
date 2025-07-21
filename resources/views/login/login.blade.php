@@ -1,33 +1,44 @@
 <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Login</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+
+    <link href="{{ asset('img/logo.png') }}" rel="icon">
+    <link href="{{ asset('img/logo.png') }}" rel="apple-touch-icon">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white dark:bg-gray-300 min-h-screen flex items-center justify-center ">
+<body class="bg-black dark:bg-black-300 min-h-screen flex items-center justify-center ">
     <div
-        class="w-full max-w-5xl bg-white shadow-2xl border border-gray-300 rounded-lg overflow-hidden flex flex-col md:flex-row">
+        class="w-full max-w-5xl bg-gray-800 shadow-2xl border border-white rounded-lg overflow-hidden flex flex-col md:flex-row">
         <!-- Left Section -->
         <div class="w-full md:w-1/2 p-10">
             <div class="mb-6">
-                <h1 class="text-2xl font-bold text-gray-800">MONSTER GALAXY GYM</h1>
+                <h1 class="text-2xl font-bold text-black">MONSTER GALAXY GYM</h1>
             </div>
-            <p class="text-sm text-gray-500 mb-6">Please Login to Continue</p>
+            <p class="text-sm text-black-500 mb-6">Please Login to Continue</p>
 
             <form method="POST" action="{{ route('login.attempt') }}" class="space-y-4">
                 @csrf
 
                 <!-- Username -->
                 <div>
-                    <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+                    <label for="username" class="block text-sm font-medium text-black-700">Username</label>
                     <input type="text" name="username" id="username" required
-                        class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500">
+                        class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500">
                 </div>
 
                 <!-- Password -->
                 <div>
-                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <label for="password" class="block text-sm font-medium text-black-700">Password</label>
                     <div class="relative">
                         <input type="password" name="password" id="password" required
-                            class="w-full mt-1 p-2 pr-10 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500">
+                            class="w-full mt-1 p-2 pr-10 border border-gray-300 rounded-md focus:ring-yellow-500 focus:border-yellow-500">
                         <span onclick="togglePassword()"
                             class="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer text-gray-500">
                             <!-- Eye icon SVG -->
@@ -48,17 +59,17 @@
 
                 <!-- Submit -->
                 <button type="submit"
-                    class="w-full bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition">
+                    class="w-full bg-yellow-600 text-white py-2 rounded-md hover:bg-yellow-700 transition">
                     Sign in
                 </button>
 
             </form>
-            <a class="w-full block text-center bg-purple-600 text-white py-2 rounded-md hover:bg-purple-700 transition"
+            <a class="w-full block text-center bg-yellow-600 text-white py-2 rounded-md hover:bg-yellow-700 transition"
                 href="{{ url('/') }}">Back</a>
         </div>
 
         <!-- Right Section -->
-        <div class="w-full md:w-1/2 bg-purple-100 p-8 flex items-center justify-center">
+        <div class="w-full md:w-1/2 bg-gray-800 p-8 flex items-center justify-center">
             <img src="{{ asset('img/logo.png') }}" alt="Illustration" class="max-w-full h-auto">
             {{-- <img src="{{ asset('img/ass.jpg') }}" alt="Illustration" class="max-w-full h-auto"> --}}
         </div>

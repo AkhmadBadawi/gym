@@ -18,8 +18,7 @@
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
                     <div class="title"><a href="#" class="btn btn-color" id="sidebarToggle"
-                            style="border: 1px solid white;"><i
-                                class="fa-solid fa-bars"></i></a></div>
+                            style="border: 1px solid white;"><i class="fa-solid fa-bars"></i></a></div>
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -86,7 +85,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; MonsterGYM 2025</span>
+                        <span>Copyright &copy; MonsterGalaxyGym 2025</span>
                     </div>
                 </div>
             </footer>
